@@ -1,0 +1,7 @@
+.venv/
+.pip-cache/
+.hf-cache/
+.torch-cache/
+models/
+data/images/
+__pycache__/

@@ -1,0 +1,29 @@
+{
+  "device": "mps",
+  "dtype": "torch.float16",
+  "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+  "model_revisions": {
+    "base": {
+      "repo": "Qwen/Qwen3-VL-2B-Instruct",
+      "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "path": "models/base"
+    },
+    "adapter": {
+      "repo": "Ateeqq/food-analysis",
+      "revision": "62063148670d92d7a2df04e75b7c73b0b35caf77",
+      "path": "models/adapter"
+    }
+  },
+  "versions": {
+    "torch": "2.14.0",
+    "transformers": "4.57.6",
+    "peft": "0.18.1",
+    "Pillow": "12.3.0"
+  },
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 512
+  },
+  "image_max_size": 768,
+  "attention": "eager"
+}

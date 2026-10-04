@@ -1,0 +1,185 @@
+[
+  {
+    "query": {
+      "query": "grilled chicken with vegetables",
+      "max_price_mkd": 400
+    },
+    "seconds": 1.158,
+    "retrieval": {
+      "mode": "hybrid",
+      "indexed": 295,
+      "total": 295
+    },
+    "answer_status": "insufficient_evidence",
+    "matches": [
+      {
+        "id": 68,
+        "item_name": "Grilled Halloumi Naanwich (Vegetarian)",
+        "restaurant_name": "Healthy Junk Food",
+        "price_mkd": 242
+      },
+      {
+        "id": 206,
+        "item_name": "Палачинка мед ореви 200gr",
+        "restaurant_name": "Forum",
+        "price_mkd": 240
+      },
+      {
+        "id": 143,
+        "item_name": "Turkish style chicken wings",
+        "restaurant_name": "Turkos Restaurant",
+        "price_mkd": 370
+      },
+      {
+        "id": 156,
+        "item_name": "Чорба со месо и грав (beans with braised meat)",
+        "restaurant_name": "Turkos Restaurant",
+        "price_mkd": 220
+      },
+      {
+        "id": 144,
+        "item_name": "Rice and salad, chicken",
+        "restaurant_name": "Turkos Restaurant",
+        "price_mkd": 250
+      }
+    ],
+    "recommendations": []
+  },
+  {
+    "query": {
+      "query": "пица со сирење",
+      "max_price_mkd": 400
+    },
+    "seconds": 1.767,
+    "retrieval": {
+      "mode": "hybrid",
+      "indexed": 295,
+      "total": 295
+    },
+    "answer_status": "grounded",
+    "matches": [
+      {
+        "id": 3,
+        "item_name": "Margherita 25цм",
+        "restaurant_name": "Picerija 511",
+        "price_mkd": 300
+      },
+      {
+        "id": 4,
+        "item_name": "Margherita 29цм",
+        "restaurant_name": "Picerija 511",
+        "price_mkd": 370
+      },
+      {
+        "id": 33,
+        "item_name": "Italiana 25цм",
+        "restaurant_name": "Picerija 511",
+        "price_mkd": 400
+      },
+      {
+        "id": 6,
+        "item_name": "Basilico  25цм",
+        "restaurant_name": "Picerija 511",
+        "price_mkd": 350
+      },
+      {
+        "id": 21,
+        "item_name": "Rustica Bianca 25цм",
+        "restaurant_name": "Picerija 511",
+        "price_mkd": 390
+      }
+    ],
+    "recommendations": [
+      {
+        "meal_id": 3,
+        "quote": "Margherita 25цм"
+      },
+      {
+        "meal_id": 4,
+        "quote": "Margherita 29цм"
+      },
+      {
+        "meal_id": 33,
+        "quote": "Italiana 25цм"
+      },
+      {
+        "meal_id": 6,
+        "quote": "Basilico  25цм"
+      },
+      {
+        "meal_id": 21,
+        "quote": "Rustica Bianca 25цм"
+      }
+    ]
+  },
+  {
+    "query": {
+      "query": "vegetarian rice bowl",
+      "restaurant": "Healthy Junk Food"
+    },
+    "seconds": 1.023,
+    "retrieval": {
+      "mode": "hybrid",
+      "indexed": 295,
+      "total": 295
+    },
+    "answer_status": "grounded",
+    "matches": [
+      {
+        "id": 70,
+        "item_name": "Plant-Based Rice Bowl",
+        "restaurant_name": "Healthy Junk Food",
+        "price_mkd": 215
+      },
+      {
+        "id": 67,
+        "item_name": "Vegetarian Seekh Kebab Naanwich",
+        "restaurant_name": "Healthy Junk Food",
+        "price_mkd": 197
+      },
+      {
+        "id": 69,
+        "item_name": "Royal Saffron Chicken Meal",
+        "restaurant_name": "Healthy Junk Food",
+        "price_mkd": 278
+      },
+      {
+        "id": 73,
+        "item_name": "Soup of the Day (Chef’s Special)",
+        "restaurant_name": "Healthy Junk Food",
+        "price_mkd": 116
+      },
+      {
+        "id": 72,
+        "item_name": "Salad",
+        "restaurant_name": "Healthy Junk Food",
+        "price_mkd": 152
+      }
+    ],
+    "recommendations": [
+      {
+        "meal_id": 70,
+        "quote": "Plant-Based Rice Bowl"
+      },
+      {
+        "meal_id": 67,
+        "quote": "Vegetarian Seekh Kebab Naanwich"
+      }
+    ]
+  },
+  {
+    "query": {
+      "query": "burger",
+      "max_price_mkd": 1
+    },
+    "seconds": 0.17,
+    "retrieval": {
+      "mode": "hybrid",
+      "indexed": 295,
+      "total": 295
+    },
+    "answer_status": "no_results",
+    "matches": [],
+    "recommendations": []
+  }
+]

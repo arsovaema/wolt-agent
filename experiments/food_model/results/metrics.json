@@ -1,0 +1,2369 @@
+{
+  "sample_size": 30,
+  "common_successful_n": 30,
+  "coverage": {
+    "openai_text": {
+      "success": 30,
+      "failures": [],
+      "missing": 0
+    },
+    "hf_image": {
+      "success": 30,
+      "failures": [],
+      "missing": 0
+    },
+    "hf_image_text": {
+      "success": 30,
+      "failures": [],
+      "missing": 0
+    },
+    "openai_image_text": {
+      "success": 30,
+      "failures": [],
+      "missing": 0
+    },
+    "ensemble_50_50": {
+      "success": 30,
+      "failures": [],
+      "missing": 0
+    }
+  },
+  "per_arm": {
+    "openai_text": {
+      "n": 30,
+      "calories": {
+        "mae": 235.9825193,
+        "median_absolute_error": 177.74502550000003,
+        "signed_bias": 134.13138403333332,
+        "wape_percent": 52.0317885589473,
+        "within_20_percent_n": 9,
+        "within_20_percent_denominator": 30
+      },
+      "protein": {
+        "mae": 11.742434066666666,
+        "median_absolute_error": 10.0302695,
+        "signed_bias": 0.27703426666666686,
+        "wape_percent": 40.66930351082789,
+        "within_20_percent_n": 6,
+        "within_20_percent_denominator": 30
+      },
+      "carbs": {
+        "mae": 33.82760243333333,
+        "median_absolute_error": 31.029439999999997,
+        "signed_bias": 32.668868966666665,
+        "wape_percent": 125.6078045569793,
+        "within_20_percent_n": 6,
+        "within_20_percent_denominator": 30
+      },
+      "fat": {
+        "mae": 12.706784733333333,
+        "median_absolute_error": 12.168014000000001,
+        "signed_bias": -1.017912933333333,
+        "wape_percent": 45.390160934345054,
+        "within_20_percent_n": 9,
+        "within_20_percent_denominator": 30
+      },
+      "median_seconds": 0.9146650409966242,
+      "macro_energy_discrepancy_over_20_percent_n": 0
+    },
+    "hf_image": {
+      "n": 30,
+      "calories": {
+        "mae": 218.98801036666666,
+        "median_absolute_error": 218.355484,
+        "signed_bias": -42.53528263333334,
+        "wape_percent": 48.28466907693937,
+        "within_20_percent_n": 6,
+        "within_20_percent_denominator": 30
+      },
+      "protein": {
+        "mae": 13.389682533333334,
+        "median_absolute_error": 8.5937985,
+        "signed_bias": -9.656299066666666,
+        "wape_percent": 46.374462038290645,
+        "within_20_percent_n": 9,
+        "within_20_percent_denominator": 30
+      },
+      "carbs": {
+        "mae": 19.328280166666666,
+        "median_absolute_error": 16.824499000000003,
+        "signed_bias": 11.335535633333333,
+        "wape_percent": 71.7692849317898,
+        "within_20_percent_n": 5,
+        "within_20_percent_denominator": 30
+      },
+      "fat": {
+        "mae": 16.665992066666668,
+        "median_absolute_error": 13.883538000000001,
+        "signed_bias": -9.767912933333333,
+        "wape_percent": 59.5329249618975,
+        "within_20_percent_n": 2,
+        "within_20_percent_denominator": 30
+      },
+      "median_seconds": 7.297421479001059,
+      "macro_energy_discrepancy_over_20_percent_n": 1
+    },
+    "hf_image_text": {
+      "n": 30,
+      "calories": {
+        "mae": 220.0581703,
+        "median_absolute_error": 211.813038,
+        "signed_bias": -44.2019493,
+        "wape_percent": 48.520628653693734,
+        "within_20_percent_n": 5,
+        "within_20_percent_denominator": 30
+      },
+      "protein": {
+        "mae": 13.039682533333332,
+        "median_absolute_error": 9.3705005,
+        "signed_bias": -8.972965733333334,
+        "wape_percent": 45.16225542525147,
+        "within_20_percent_n": 7,
+        "within_20_percent_denominator": 30
+      },
+      "carbs": {
+        "mae": 20.5714921,
+        "median_absolute_error": 18.095779,
+        "signed_bias": 12.235535633333333,
+        "wape_percent": 76.38554828810625,
+        "within_20_percent_n": 3,
+        "within_20_percent_denominator": 30
+      },
+      "fat": {
+        "mae": 16.991180266666667,
+        "median_absolute_error": 13.354134000000002,
+        "signed_bias": -10.2345796,
+        "wape_percent": 60.69453626182215,
+        "within_20_percent_n": 4,
+        "within_20_percent_denominator": 30
+      },
+      "median_seconds": 8.514869833001285,
+      "macro_energy_discrepancy_over_20_percent_n": 5
+    },
+    "openai_image_text": {
+      "n": 30,
+      "calories": {
+        "mae": 217.4825193,
+        "median_absolute_error": 201.303497,
+        "signed_bias": 48.96471736666666,
+        "wape_percent": 47.952723333286215,
+        "within_20_percent_n": 8,
+        "within_20_percent_denominator": 30
+      },
+      "protein": {
+        "mae": 11.460434066666666,
+        "median_absolute_error": 10.451282500000001,
+        "signed_bias": -2.4396324,
+        "wape_percent": 39.692611325464895,
+        "within_20_percent_n": 6,
+        "within_20_percent_denominator": 30
+      },
+      "carbs": {
+        "mae": 30.947202566666668,
+        "median_absolute_error": 25.577939999999998,
+        "signed_bias": 25.8022023,
+        "wape_percent": 114.91237604674879,
+        "within_20_percent_n": 3,
+        "within_20_percent_denominator": 30
+      },
+      "fat": {
+        "mae": 13.516784733333333,
+        "median_absolute_error": 9.5577265,
+        "signed_bias": -6.141246266666666,
+        "wape_percent": 48.28357820145059,
+        "within_20_percent_n": 6,
+        "within_20_percent_denominator": 30
+      },
+      "median_seconds": 1.248173146013869,
+      "macro_energy_discrepancy_over_20_percent_n": 0
+    },
+    "ensemble_50_50": {
+      "n": 30,
+      "calories": {
+        "mae": 224.66265436666666,
+        "median_absolute_error": 240.10803199999998,
+        "signed_bias": 45.7980507,
+        "wape_percent": 49.53587140171808,
+        "within_20_percent_n": 6,
+        "within_20_percent_denominator": 30
+      },
+      "protein": {
+        "mae": 11.742434066666666,
+        "median_absolute_error": 9.13297,
+        "signed_bias": -4.6896324,
+        "wape_percent": 40.66930351082789,
+        "within_20_percent_n": 7,
+        "within_20_percent_denominator": 30
+      },
+      "carbs": {
+        "mae": 25.351469166666668,
+        "median_absolute_error": 20.6111225,
+        "signed_bias": 22.0022023,
+        "wape_percent": 94.13443919339488,
+        "within_20_percent_n": 3,
+        "within_20_percent_denominator": 30
+      },
+      "fat": {
+        "mae": 14.169184733333333,
+        "median_absolute_error": 11.319896499999999,
+        "signed_bias": -5.392912933333333,
+        "wape_percent": 50.614029343499524,
+        "within_20_percent_n": 4,
+        "within_20_percent_denominator": 30
+      },
+      "median_seconds": 8.277439458004665,
+      "macro_energy_discrepancy_over_20_percent_n": 0
+    }
+  },
+  "common_subset": {
+    "openai_text": {
+      "n": 30,
+      "calories": {
+        "mae": 235.9825193,
+        "median_absolute_error": 177.74502550000003,
+        "signed_bias": 134.13138403333332,
+        "wape_percent": 52.0317885589473,
+        "within_20_percent_n": 9,
+        "within_20_percent_denominator": 30
+      },
+      "protein": {
+        "mae": 11.742434066666666,
+        "median_absolute_error": 10.0302695,
+        "signed_bias": 0.27703426666666686,
+        "wape_percent": 40.66930351082789,
+        "within_20_percent_n": 6,
+        "within_20_percent_denominator": 30
+      },
+      "carbs": {
+        "mae": 33.82760243333333,
+        "median_absolute_error": 31.029439999999997,
+        "signed_bias": 32.668868966666665,
+        "wape_percent": 125.6078045569793,
+        "within_20_percent_n": 6,
+        "within_20_percent_denominator": 30
+      },
+      "fat": {
+        "mae": 12.706784733333333,
+        "median_absolute_error": 12.168014000000001,
+        "signed_bias": -1.017912933333333,
+        "wape_percent": 45.390160934345054,
+        "within_20_percent_n": 9,
+        "within_20_percent_denominator": 30
+      },
+      "median_seconds": 0.9146650409966242,
+      "macro_energy_discrepancy_over_20_percent_n": 0
+    },
+    "hf_image": {
+      "n": 30,
+      "calories": {
+        "mae": 218.98801036666666,
+        "median_absolute_error": 218.355484,
+        "signed_bias": -42.53528263333334,
+        "wape_percent": 48.28466907693937,
+        "within_20_percent_n": 6,
+        "within_20_percent_denominator": 30
+      },
+      "protein": {
+        "mae": 13.389682533333334,
+        "median_absolute_error": 8.5937985,
+        "signed_bias": -9.656299066666666,
+        "wape_percent": 46.374462038290645,
+        "within_20_percent_n": 9,
+        "within_20_percent_denominator": 30
+      },
+      "carbs": {
+        "mae": 19.328280166666666,
+        "median_absolute_error": 16.824499000000003,
+        "signed_bias": 11.335535633333333,
+        "wape_percent": 71.7692849317898,
+        "within_20_percent_n": 5,
+        "within_20_percent_denominator": 30
+      },
+      "fat": {
+        "mae": 16.665992066666668,
+        "median_absolute_error": 13.883538000000001,
+        "signed_bias": -9.767912933333333,
+        "wape_percent": 59.5329249618975,
+        "within_20_percent_n": 2,
+        "within_20_percent_denominator": 30
+      },
+      "median_seconds": 7.297421479001059,
+      "macro_energy_discrepancy_over_20_percent_n": 1
+    },
+    "hf_image_text": {
+      "n": 30,
+      "calories": {
+        "mae": 220.0581703,
+        "median_absolute_error": 211.813038,
+        "signed_bias": -44.2019493,
+        "wape_percent": 48.520628653693734,
+        "within_20_percent_n": 5,
+        "within_20_percent_denominator": 30
+      },
+      "protein": {
+        "mae": 13.039682533333332,
+        "median_absolute_error": 9.3705005,
+        "signed_bias": -8.972965733333334,
+        "wape_percent": 45.16225542525147,
+        "within_20_percent_n": 7,
+        "within_20_percent_denominator": 30
+      },
+      "carbs": {
+        "mae": 20.5714921,
+        "median_absolute_error": 18.095779,
+        "signed_bias": 12.235535633333333,
+        "wape_percent": 76.38554828810625,
+        "within_20_percent_n": 3,
+        "within_20_percent_denominator": 30
+      },
+      "fat": {
+        "mae": 16.991180266666667,
+        "median_absolute_error": 13.354134000000002,
+        "signed_bias": -10.2345796,
+        "wape_percent": 60.69453626182215,
+        "within_20_percent_n": 4,
+        "within_20_percent_denominator": 30
+      },
+      "median_seconds": 8.514869833001285,
+      "macro_energy_discrepancy_over_20_percent_n": 5
+    },
+    "openai_image_text": {
+      "n": 30,
+      "calories": {
+        "mae": 217.4825193,
+        "median_absolute_error": 201.303497,
+        "signed_bias": 48.96471736666666,
+        "wape_percent": 47.952723333286215,
+        "within_20_percent_n": 8,
+        "within_20_percent_denominator": 30
+      },
+      "protein": {
+        "mae": 11.460434066666666,
+        "median_absolute_error": 10.451282500000001,
+        "signed_bias": -2.4396324,
+        "wape_percent": 39.692611325464895,
+        "within_20_percent_n": 6,
+        "within_20_percent_denominator": 30
+      },
+      "carbs": {
+        "mae": 30.947202566666668,
+        "median_absolute_error": 25.577939999999998,
+        "signed_bias": 25.8022023,
+        "wape_percent": 114.91237604674879,
+        "within_20_percent_n": 3,
+        "within_20_percent_denominator": 30
+      },
+      "fat": {
+        "mae": 13.516784733333333,
+        "median_absolute_error": 9.5577265,
+        "signed_bias": -6.141246266666666,
+        "wape_percent": 48.28357820145059,
+        "within_20_percent_n": 6,
+        "within_20_percent_denominator": 30
+      },
+      "median_seconds": 1.248173146013869,
+      "macro_energy_discrepancy_over_20_percent_n": 0
+    },
+    "ensemble_50_50": {
+      "n": 30,
+      "calories": {
+        "mae": 224.66265436666666,
+        "median_absolute_error": 240.10803199999998,
+        "signed_bias": 45.7980507,
+        "wape_percent": 49.53587140171808,
+        "within_20_percent_n": 6,
+        "within_20_percent_denominator": 30
+      },
+      "protein": {
+        "mae": 11.742434066666666,
+        "median_absolute_error": 9.13297,
+        "signed_bias": -4.6896324,
+        "wape_percent": 40.66930351082789,
+        "within_20_percent_n": 7,
+        "within_20_percent_denominator": 30
+      },
+      "carbs": {
+        "mae": 25.351469166666668,
+        "median_absolute_error": 20.6111225,
+        "signed_bias": 22.0022023,
+        "wape_percent": 94.13443919339488,
+        "within_20_percent_n": 3,
+        "within_20_percent_denominator": 30
+      },
+      "fat": {
+        "mae": 14.169184733333333,
+        "median_absolute_error": 11.319896499999999,
+        "signed_bias": -5.392912933333333,
+        "wape_percent": 50.614029343499524,
+        "within_20_percent_n": 4,
+        "within_20_percent_denominator": 30
+      },
+      "median_seconds": 8.277439458004665,
+      "macro_energy_discrepancy_over_20_percent_n": 0
+    }
+  },
+  "strata": {
+    "50-350": {
+      "openai_text": {
+        "n": 10,
+        "calories": {
+          "mae": 311.972924,
+          "median_absolute_error": 268.5860825,
+          "signed_bias": 311.972924,
+          "wape_percent": 172.33495170634032,
+          "within_20_percent_n": 0,
+          "within_20_percent_denominator": 10
+        },
+        "protein": {
+          "mae": 11.9098737,
+          "median_absolute_error": 12.0976505,
+          "signed_bias": 11.9098737,
+          "wape_percent": 87.3149810936868,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "carbs": {
+          "mae": 42.1933325,
+          "median_absolute_error": 38.9404705,
+          "signed_bias": 42.1933325,
+          "wape_percent": 239.64405813877042,
+          "within_20_percent_n": 0,
+          "within_20_percent_denominator": 10
+        },
+        "fat": {
+          "mae": 10.5053246,
+          "median_absolute_error": 7.49,
+          "signed_bias": 10.4175246,
+          "wape_percent": 161.31077593014786,
+          "within_20_percent_n": 2,
+          "within_20_percent_denominator": 10
+        },
+        "median_seconds": 1.013523562491173,
+        "macro_energy_discrepancy_over_20_percent_n": 0
+      },
+      "hf_image": {
+        "n": 10,
+        "calories": {
+          "mae": 181.972924,
+          "median_absolute_error": 217.636276,
+          "signed_bias": 181.972924,
+          "wape_percent": 100.52248979594631,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "protein": {
+          "mae": 6.313873699999999,
+          "median_absolute_error": 5.168,
+          "signed_bias": 2.5098737,
+          "wape_percent": 46.28896801344134,
+          "within_20_percent_n": 3,
+          "within_20_percent_denominator": 10
+        },
+        "carbs": {
+          "mae": 19.5693323,
+          "median_absolute_error": 19.15697,
+          "signed_bias": 19.1933325,
+          "wape_percent": 111.14728156251033,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "fat": {
+          "mae": 8.5675246,
+          "median_absolute_error": 9.5415,
+          "signed_bias": 8.5675246,
+          "wape_percent": 131.55557716194983,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "median_seconds": 6.716472520507523,
+        "macro_energy_discrepancy_over_20_percent_n": 1
+      },
+      "hf_image_text": {
+        "n": 10,
+        "calories": {
+          "mae": 171.972924,
+          "median_absolute_error": 207.463276,
+          "signed_bias": 171.972924,
+          "wape_percent": 94.99845426437756,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "protein": {
+          "mae": 6.3638737,
+          "median_absolute_error": 5.125,
+          "signed_bias": 2.4598736999999997,
+          "wape_percent": 46.655533534172626,
+          "within_20_percent_n": 3,
+          "within_20_percent_denominator": 10
+        },
+        "carbs": {
+          "mae": 24.8693323,
+          "median_absolute_error": 25.3869995,
+          "signed_bias": 23.8933325,
+          "wape_percent": 141.24951414002678,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "fat": {
+          "mae": 8.0675246,
+          "median_absolute_error": 7.697418000000001,
+          "signed_bias": 8.0675246,
+          "wape_percent": 123.87800497488251,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "median_seconds": 7.044329916505376,
+        "macro_energy_discrepancy_over_20_percent_n": 1
+      },
+      "openai_image_text": {
+        "n": 10,
+        "calories": {
+          "mae": 216.472924,
+          "median_absolute_error": 201.303497,
+          "signed_bias": 216.472924,
+          "wape_percent": 119.58041237985857,
+          "within_20_percent_n": 0,
+          "within_20_percent_denominator": 10
+        },
+        "protein": {
+          "mae": 10.3638737,
+          "median_absolute_error": 9.7965,
+          "signed_bias": 6.4598737,
+          "wape_percent": 75.98077519267545,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "carbs": {
+          "mae": 32.6933325,
+          "median_absolute_error": 30.751499,
+          "signed_bias": 32.6933325,
+          "wape_percent": 185.6872261602032,
+          "within_20_percent_n": 0,
+          "within_20_percent_denominator": 10
+        },
+        "fat": {
+          "mae": 7.0353246,
+          "median_absolute_error": 7.0212045000000005,
+          "signed_bias": 6.9475246,
+          "wape_percent": 108.02842495190079,
+          "within_20_percent_n": 3,
+          "within_20_percent_denominator": 10
+        },
+        "median_seconds": 1.235953437993885,
+        "macro_energy_discrepancy_over_20_percent_n": 0
+      },
+      "ensemble_50_50": {
+        "n": 10,
+        "calories": {
+          "mae": 246.972924,
+          "median_absolute_error": 258.0012435,
+          "signed_bias": 246.972924,
+          "wape_percent": 136.42872075114332,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "protein": {
+          "mae": 7.2098737,
+          "median_absolute_error": 7.391298,
+          "signed_bias": 7.2098737,
+          "wape_percent": 52.85782214494598,
+          "within_20_percent_n": 2,
+          "within_20_percent_denominator": 10
+        },
+        "carbs": {
+          "mae": 30.6933325,
+          "median_absolute_error": 33.565305499999994,
+          "signed_bias": 30.6933325,
+          "wape_percent": 174.32789311208379,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "fat": {
+          "mae": 9.4925246,
+          "median_absolute_error": 9.168809500000002,
+          "signed_bias": 9.4925246,
+          "wape_percent": 145.75908570802434,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "median_seconds": 7.729663728518062,
+        "macro_energy_discrepancy_over_20_percent_n": 0
+      }
+    },
+    "350-650": {
+      "openai_text": {
+        "n": 10,
+        "calories": {
+          "mae": 260.6729371,
+          "median_absolute_error": 252.63923649999998,
+          "signed_bias": 221.7633301,
+          "wape_percent": 58.811229937002096,
+          "within_20_percent_n": 2,
+          "within_20_percent_denominator": 10
+        },
+        "protein": {
+          "mae": 8.8197316,
+          "median_absolute_error": 7.389618500000001,
+          "signed_bias": 3.4189259999999995,
+          "wape_percent": 28.285528586988374,
+          "within_20_percent_n": 4,
+          "within_20_percent_denominator": 10
+        },
+        "carbs": {
+          "mae": 40.2311777,
+          "median_absolute_error": 44.9348385,
+          "signed_bias": 38.105977100000004,
+          "wape_percent": 124.19321250773086,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "fat": {
+          "mae": 11.3939289,
+          "median_absolute_error": 14.1408165,
+          "signed_bias": 2.7498373,
+          "wape_percent": 46.9849585792676,
+          "within_20_percent_n": 3,
+          "within_20_percent_denominator": 10
+        },
+        "median_seconds": 0.8796067079965724,
+        "macro_energy_discrepancy_over_20_percent_n": 0
+      },
+      "hf_image": {
+        "n": 10,
+        "calories": {
+          "mae": 118.6490051,
+          "median_absolute_error": 105.21736149999998,
+          "signed_bias": 46.763330100000005,
+          "wape_percent": 26.768770085464446,
+          "within_20_percent_n": 5,
+          "within_20_percent_denominator": 10
+        },
+        "protein": {
+          "mae": 7.5574770000000004,
+          "median_absolute_error": 3.689029999999999,
+          "signed_bias": -5.181074000000001,
+          "wape_percent": 24.237385152288212,
+          "within_20_percent_n": 6,
+          "within_20_percent_denominator": 10
+        },
+        "carbs": {
+          "mae": 23.1419739,
+          "median_absolute_error": 17.513444,
+          "signed_bias": 15.1059771,
+          "wape_percent": 71.43902432692298,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "fat": {
+          "mae": 7.909350900000001,
+          "median_absolute_error": 5.5953865,
+          "signed_bias": -4.3501627,
+          "wape_percent": 32.6156611724506,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "median_seconds": 8.156217937998008,
+        "macro_energy_discrepancy_over_20_percent_n": 0
+      },
+      "hf_image_text": {
+        "n": 10,
+        "calories": {
+          "mae": 126.85948489999998,
+          "median_absolute_error": 118.49020399999998,
+          "signed_bias": 56.763330100000005,
+          "wape_percent": 28.621161901749044,
+          "within_20_percent_n": 4,
+          "within_20_percent_denominator": 10
+        },
+        "protein": {
+          "mae": 8.057477,
+          "median_absolute_error": 5.893386500000001,
+          "signed_bias": -4.681074000000001,
+          "wape_percent": 25.84092196439417,
+          "within_20_percent_n": 4,
+          "within_20_percent_denominator": 10
+        },
+        "carbs": {
+          "mae": 18.215246699999998,
+          "median_absolute_error": 14.246183499999999,
+          "signed_bias": 12.6059771,
+          "wape_percent": 56.230270492276524,
+          "within_20_percent_n": 2,
+          "within_20_percent_denominator": 10
+        },
+        "fat": {
+          "mae": 8.1849155,
+          "median_absolute_error": 7.608814499999999,
+          "signed_bias": -4.0501627000000004,
+          "wape_percent": 33.75200241440029,
+          "within_20_percent_n": 3,
+          "within_20_percent_denominator": 10
+        },
+        "median_seconds": 9.325756020509289,
+        "macro_energy_discrepancy_over_20_percent_n": 2
+      },
+      "openai_image_text": {
+        "n": 10,
+        "calories": {
+          "mae": 195.67293709999998,
+          "median_absolute_error": 205.32235699999998,
+          "signed_bias": 166.7633301,
+          "wape_percent": 44.14637830939086,
+          "within_20_percent_n": 3,
+          "within_20_percent_denominator": 10
+        },
+        "protein": {
+          "mae": 7.4197316,
+          "median_absolute_error": 6.515668000000002,
+          "signed_bias": 2.8189259999999994,
+          "wape_percent": 23.79562551309169,
+          "within_20_percent_n": 3,
+          "within_20_percent_denominator": 10
+        },
+        "carbs": {
+          "mae": 35.7311777,
+          "median_absolute_error": 34.477875,
+          "signed_bias": 34.605977100000004,
+          "wape_percent": 110.30176094615283,
+          "within_20_percent_n": 2,
+          "within_20_percent_denominator": 10
+        },
+        "fat": {
+          "mae": 8.3939289,
+          "median_absolute_error": 9.1408165,
+          "signed_bias": -0.25016270000000007,
+          "wape_percent": 34.613907559473816,
+          "within_20_percent_n": 2,
+          "within_20_percent_denominator": 10
+        },
+        "median_seconds": 1.1595567499898607,
+        "macro_energy_discrepancy_over_20_percent_n": 0
+      },
+      "ensemble_50_50": {
+        "n": 10,
+        "calories": {
+          "mae": 183.17293709999998,
+          "median_absolute_error": 163.308243,
+          "signed_bias": 134.2633301,
+          "wape_percent": 41.32621453485024,
+          "within_20_percent_n": 2,
+          "within_20_percent_denominator": 10
+        },
+        "protein": {
+          "mae": 7.619731600000001,
+          "median_absolute_error": 7.626941500000001,
+          "signed_bias": -0.8810740000000005,
+          "wape_percent": 24.437040237934074,
+          "within_20_percent_n": 4,
+          "within_20_percent_denominator": 10
+        },
+        "carbs": {
+          "mae": 29.2311777,
+          "median_absolute_error": 25.664590999999998,
+          "signed_bias": 26.6059771,
+          "wape_percent": 90.23633091276231,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "fat": {
+          "mae": 8.1439289,
+          "median_absolute_error": 8.315117,
+          "signed_bias": -0.8001627000000001,
+          "wape_percent": 33.58298664115767,
+          "within_20_percent_n": 3,
+          "within_20_percent_denominator": 10
+        },
+        "median_seconds": 8.955335750521044,
+        "macro_energy_discrepancy_over_20_percent_n": 0
+      }
+    },
+    "650-1500": {
+      "openai_text": {
+        "n": 10,
+        "calories": {
+          "mae": 135.3016968,
+          "median_absolute_error": 79.80853300000001,
+          "signed_bias": -131.342102,
+          "wape_percent": 18.37484186120869,
+          "within_20_percent_n": 7,
+          "within_20_percent_denominator": 10
+        },
+        "protein": {
+          "mae": 14.4976969,
+          "median_absolute_error": 14.4365015,
+          "signed_bias": -14.4976969,
+          "wape_percent": 34.68539650566249,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "carbs": {
+          "mae": 19.0582971,
+          "median_absolute_error": 8.166999500000001,
+          "signed_bias": 17.7072973,
+          "wape_percent": 61.892251828872425,
+          "within_20_percent_n": 5,
+          "within_20_percent_denominator": 10
+        },
+        "fat": {
+          "mae": 16.221100699999997,
+          "median_absolute_error": 12.941568499999999,
+          "signed_bias": -16.221100699999997,
+          "wape_percent": 30.478702031053633,
+          "within_20_percent_n": 4,
+          "within_20_percent_denominator": 10
+        },
+        "median_seconds": 0.8932722915196791,
+        "macro_energy_discrepancy_over_20_percent_n": 0
+      },
+      "hf_image": {
+        "n": 10,
+        "calories": {
+          "mae": 356.342102,
+          "median_absolute_error": 394.34487900000005,
+          "signed_bias": -356.342102,
+          "wape_percent": 48.39355253925166,
+          "within_20_percent_n": 0,
+          "within_20_percent_denominator": 10
+        },
+        "protein": {
+          "mae": 26.2976969,
+          "median_absolute_error": 23.4365015,
+          "signed_bias": -26.2976969,
+          "wape_percent": 62.91661706365453,
+          "within_20_percent_n": 0,
+          "within_20_percent_denominator": 10
+        },
+        "carbs": {
+          "mae": 15.2735343,
+          "median_absolute_error": 15.5510005,
+          "signed_bias": -0.2927027000000006,
+          "wape_percent": 49.60114884621673,
+          "within_20_percent_n": 3,
+          "within_20_percent_denominator": 10
+        },
+        "fat": {
+          "mae": 33.5211007,
+          "median_absolute_error": 38.16250049999999,
+          "signed_bias": -33.5211007,
+          "wape_percent": 62.98460621653397,
+          "within_20_percent_n": 0,
+          "within_20_percent_denominator": 10
+        },
+        "median_seconds": 8.141934645507718,
+        "macro_energy_discrepancy_over_20_percent_n": 0
+      },
+      "hf_image_text": {
+        "n": 10,
+        "calories": {
+          "mae": 361.342102,
+          "median_absolute_error": 394.34487900000005,
+          "signed_bias": -361.342102,
+          "wape_percent": 49.07258474268256,
+          "within_20_percent_n": 0,
+          "within_20_percent_denominator": 10
+        },
+        "protein": {
+          "mae": 24.697696899999997,
+          "median_absolute_error": 23.907837999999998,
+          "signed_bias": -24.697696899999997,
+          "wape_percent": 59.088654954096285,
+          "within_20_percent_n": 0,
+          "within_20_percent_denominator": 10
+        },
+        "carbs": {
+          "mae": 18.6298973,
+          "median_absolute_error": 18.095779,
+          "signed_bias": 0.2072972999999994,
+          "wape_percent": 60.50101376778466,
+          "within_20_percent_n": 0,
+          "within_20_percent_denominator": 10
+        },
+        "fat": {
+          "mae": 34.7211007,
+          "median_absolute_error": 42.7490025,
+          "signed_bias": -34.7211007,
+          "wape_percent": 65.23935101552682,
+          "within_20_percent_n": 0,
+          "within_20_percent_denominator": 10
+        },
+        "median_seconds": 8.504231583006913,
+        "macro_energy_discrepancy_over_20_percent_n": 2
+      },
+      "openai_image_text": {
+        "n": 10,
+        "calories": {
+          "mae": 240.3016968,
+          "median_absolute_error": 186.570831,
+          "signed_bias": -236.342102,
+          "wape_percent": 32.63451813325757,
+          "within_20_percent_n": 5,
+          "within_20_percent_denominator": 10
+        },
+        "protein": {
+          "mae": 16.5976969,
+          "median_absolute_error": 19.407837999999998,
+          "signed_bias": -16.5976969,
+          "wape_percent": 39.70959677445769,
+          "within_20_percent_n": 2,
+          "within_20_percent_denominator": 10
+        },
+        "carbs": {
+          "mae": 24.4170975,
+          "median_absolute_error": 21.013,
+          "signed_bias": 10.107297299999999,
+          "wape_percent": 79.29507759642027,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "fat": {
+          "mae": 25.1211007,
+          "median_absolute_error": 23.300434,
+          "signed_bias": -25.1211007,
+          "wape_percent": 47.20139262358398,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "median_seconds": 1.3463227710017236,
+        "macro_energy_discrepancy_over_20_percent_n": 0
+      },
+      "ensemble_50_50": {
+        "n": 10,
+        "calories": {
+          "mae": 243.842102,
+          "median_absolute_error": 254.267517,
+          "signed_bias": -243.842102,
+          "wape_percent": 33.11532796205642,
+          "within_20_percent_n": 3,
+          "within_20_percent_denominator": 10
+        },
+        "protein": {
+          "mae": 20.3976969,
+          "median_absolute_error": 18.9365015,
+          "signed_bias": -20.3976969,
+          "wape_percent": 48.80100678465851,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "carbs": {
+          "mae": 16.1298973,
+          "median_absolute_error": 9.188875,
+          "signed_bias": 8.707297299999999,
+          "wape_percent": 52.38220709999581,
+          "within_20_percent_n": 1,
+          "within_20_percent_denominator": 10
+        },
+        "fat": {
+          "mae": 24.8711007,
+          "median_absolute_error": 23.162500499999997,
+          "signed_bias": -24.8711007,
+          "wape_percent": 46.731654123793795,
+          "within_20_percent_n": 0,
+          "within_20_percent_denominator": 10
+        },
+        "median_seconds": 8.98026199999731,
+        "macro_energy_discrepancy_over_20_percent_n": 0
+      }
+    }
+  },
+  "paired_vs_current_text": {
+    "hf_image": {
+      "calories": {
+        "n": 30,
+        "mae_difference_candidate_minus_baseline": -16.99450893333333,
+        "bootstrap_95_percent_interval": [
+          -86.9378174,
+          46.833333333333336
+        ],
+        "candidate_better_n": 14,
+        "ties_n": 3
+      },
+      "protein": {
+        "n": 30,
+        "mae_difference_candidate_minus_baseline": 1.6472484666666667,
+        "bootstrap_95_percent_interval": [
+          -1.2477098,
+          4.7245832000000005
+        ],
+        "candidate_better_n": 11,
+        "ties_n": 5
+      }
+    },
+    "hf_image_text": {
+      "calories": {
+        "n": 30,
+        "mae_difference_candidate_minus_baseline": -15.924348999999998,
+        "bootstrap_95_percent_interval": [
+          -82.09101566666666,
+          44.575651
+        ],
+        "candidate_better_n": 14,
+        "ties_n": 4
+      },
+      "protein": {
+        "n": 30,
+        "mae_difference_candidate_minus_baseline": 1.2972484666666666,
+        "bootstrap_95_percent_interval": [
+          -1.3050417333333333,
+          3.7565832
+        ],
+        "candidate_better_n": 11,
+        "ties_n": 4
+      }
+    },
+    "openai_image_text": {
+      "calories": {
+        "n": 30,
+        "mae_difference_candidate_minus_baseline": -18.499999999999996,
+        "bootstrap_95_percent_interval": [
+          -82.0,
+          39.833333333333336
+        ],
+        "candidate_better_n": 14,
+        "ties_n": 11
+      },
+      "protein": {
+        "n": 30,
+        "mae_difference_candidate_minus_baseline": -0.282,
+        "bootstrap_95_percent_interval": [
+          -2.1999999999999997,
+          1.6666666666666667
+        ],
+        "candidate_better_n": 11,
+        "ties_n": 14
+      }
+    },
+    "ensemble_50_50": {
+      "calories": {
+        "n": 30,
+        "mae_difference_candidate_minus_baseline": -11.319864933333328,
+        "bootstrap_95_percent_interval": [
+          -46.31986493333333,
+          20.583333333333332
+        ],
+        "candidate_better_n": 14,
+        "ties_n": 3
+      },
+      "protein": {
+        "n": 30,
+        "mae_difference_candidate_minus_baseline": 5.921189464667501e-17,
+        "bootstrap_95_percent_interval": [
+          -1.883333333333333,
+          1.85
+        ],
+        "candidate_better_n": 11,
+        "ties_n": 5
+      }
+    }
+  },
+  "transient_error_attempts": {
+    "RateLimitError": 17
+  },
+  "openai_usage": {
+    "prompt_tokens": 439000,
+    "completion_tokens": 1512,
+    "total_tokens": 440512
+  },
+  "api_models": [
+    "gpt-4o-mini-2024-07-18"
+  ],
+  "per_dish": {
+    "dish_1561739212": {
+      "reference": {
+        "calories": 134.01001,
+        "mass_g": 214.0,
+        "fat": 0.325,
+        "carbs": 23.797001,
+        "protein": 8.347
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 300.0,
+          "protein": 20.0,
+          "carbs": 50.0,
+          "fat": 5.0
+        },
+        "hf_image": {
+          "calories": 450.0,
+          "protein": 10.0,
+          "carbs": 60.0,
+          "fat": 15.0
+        },
+        "hf_image_text": {
+          "calories": 350.0,
+          "protein": 10.0,
+          "carbs": 50.0,
+          "fat": 5.0
+        },
+        "openai_image_text": {
+          "calories": 350.0,
+          "protein": 20.0,
+          "carbs": 60.0,
+          "fat": 5.0
+        },
+        "ensemble_50_50": {
+          "calories": 375.0,
+          "protein": 15.0,
+          "carbs": 55.0,
+          "fat": 10.0
+        }
+      }
+    },
+    "dish_1565896701": {
+      "reference": {
+        "calories": 294.47345,
+        "mass_g": 184.0,
+        "fat": 18.184381,
+        "carbs": 8.322058,
+        "protein": 25.74716
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 650.0,
+          "protein": 40.0,
+          "carbs": 60.0,
+          "fat": 30.0
+        },
+        "hf_image": {
+          "calories": 500.0,
+          "protein": 30.0,
+          "carbs": 30.0,
+          "fat": 25.0
+        },
+        "hf_image_text": {
+          "calories": 500.0,
+          "protein": 30.0,
+          "carbs": 40.0,
+          "fat": 25.0
+        },
+        "openai_image_text": {
+          "calories": 600.0,
+          "protein": 40.0,
+          "carbs": 50.0,
+          "fat": 30.0
+        },
+        "ensemble_50_50": {
+          "calories": 575.0,
+          "protein": 35.0,
+          "carbs": 45.0,
+          "fat": 27.5
+        }
+      }
+    },
+    "dish_1558376768": {
+      "reference": {
+        "calories": 74.360001,
+        "mass_g": 143.0,
+        "fat": 0.286,
+        "carbs": 0.429,
+        "protein": 20.02
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 800.0,
+          "protein": 40.0,
+          "carbs": 100.0,
+          "fat": 30.0
+        },
+        "hf_image": {
+          "calories": 100.0,
+          "protein": 1.0,
+          "carbs": 25.0,
+          "fat": 0.5
+        },
+        "hf_image_text": {
+          "calories": 100.0,
+          "protein": 0.5,
+          "carbs": 25.0,
+          "fat": 0.5
+        },
+        "openai_image_text": {
+          "calories": 95.0,
+          "protein": 0.5,
+          "carbs": 25.0,
+          "fat": 0.3
+        },
+        "ensemble_50_50": {
+          "calories": 450.0,
+          "protein": 20.5,
+          "carbs": 62.5,
+          "fat": 15.25
+        }
+      }
+    },
+    "dish_1562099053": {
+      "reference": {
+        "calories": 98.382996,
+        "mass_g": 37.0,
+        "fat": 3.478,
+        "carbs": 12.395,
+        "protein": 4.144
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 285.0,
+          "protein": 12.0,
+          "carbs": 36.0,
+          "fat": 10.0
+        },
+        "hf_image": {
+          "calories": 350.0,
+          "protein": 10.0,
+          "carbs": 40.0,
+          "fat": 15.0
+        },
+        "hf_image_text": {
+          "calories": 350.0,
+          "protein": 10.0,
+          "carbs": 40.0,
+          "fat": 15.0
+        },
+        "openai_image_text": {
+          "calories": 285.0,
+          "protein": 12.0,
+          "carbs": 36.0,
+          "fat": 10.0
+        },
+        "ensemble_50_50": {
+          "calories": 317.5,
+          "protein": 11.0,
+          "carbs": 38.0,
+          "fat": 12.5
+        }
+      }
+    },
+    "dish_1563220987": {
+      "reference": {
+        "calories": 224.987503,
+        "mass_g": 110.0,
+        "fat": 12.479591,
+        "carbs": 4.072388,
+        "protein": 22.457699
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 650.0,
+          "protein": 35.0,
+          "carbs": 70.0,
+          "fat": 25.0
+        },
+        "hf_image": {
+          "calories": 350.0,
+          "protein": 30.0,
+          "carbs": 10.0,
+          "fat": 15.0
+        },
+        "hf_image_text": {
+          "calories": 500.0,
+          "protein": 30.0,
+          "carbs": 60.0,
+          "fat": 25.0
+        },
+        "openai_image_text": {
+          "calories": 600.0,
+          "protein": 40.0,
+          "carbs": 70.0,
+          "fat": 20.0
+        },
+        "ensemble_50_50": {
+          "calories": 500.0,
+          "protein": 32.5,
+          "carbs": 40.0,
+          "fat": 20.0
+        }
+      }
+    },
+    "dish_1558717604": {
+      "reference": {
+        "calories": 73.839996,
+        "mass_g": 142.0,
+        "fat": 0.284,
+        "carbs": 19.879999,
+        "protein": 0.426
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 95.0,
+          "protein": 0.5,
+          "carbs": 25.0,
+          "fat": 0.3
+        },
+        "hf_image": {
+          "calories": 80.0,
+          "protein": 0.5,
+          "carbs": 18.0,
+          "fat": 0.3
+        },
+        "hf_image_text": {
+          "calories": 80.0,
+          "protein": 0.5,
+          "carbs": 15.0,
+          "fat": 0.3
+        },
+        "openai_image_text": {
+          "calories": 95.0,
+          "protein": 0.5,
+          "carbs": 25.0,
+          "fat": 0.3
+        },
+        "ensemble_50_50": {
+          "calories": 87.5,
+          "protein": 0.5,
+          "carbs": 21.5,
+          "fat": 0.3
+        }
+      }
+    },
+    "dish_1558635618": {
+      "reference": {
+        "calories": 220.253998,
+        "mass_g": 334.0,
+        "fat": 2.439,
+        "carbs": 49.700001,
+        "protein": 5.606
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 350.0,
+          "protein": 8.0,
+          "carbs": 75.0,
+          "fat": 2.0
+        },
+        "hf_image": {
+          "calories": 450.0,
+          "protein": 15.0,
+          "carbs": 60.0,
+          "fat": 10.0
+        },
+        "hf_image_text": {
+          "calories": 350.0,
+          "protein": 10.0,
+          "carbs": 50.0,
+          "fat": 5.0
+        },
+        "openai_image_text": {
+          "calories": 350.0,
+          "protein": 8.0,
+          "carbs": 75.0,
+          "fat": 2.0
+        },
+        "ensemble_50_50": {
+          "calories": 400.0,
+          "protein": 11.5,
+          "carbs": 67.5,
+          "fat": 6.0
+        }
+      }
+    },
+    "dish_1565020796": {
+      "reference": {
+        "calories": 90.599998,
+        "mass_g": 99.0,
+        "fat": 3.542,
+        "carbs": 0.749,
+        "protein": 12.06
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 250.0,
+          "protein": 30.0,
+          "carbs": 2.0,
+          "fat": 12.0
+        },
+        "hf_image": {
+          "calories": 350.0,
+          "protein": 15.0,
+          "carbs": 5.0,
+          "fat": 20.0
+        },
+        "hf_image_text": {
+          "calories": 300.0,
+          "protein": 15.0,
+          "carbs": 5.0,
+          "fat": 20.0
+        },
+        "openai_image_text": {
+          "calories": 200.0,
+          "protein": 20.0,
+          "carbs": 2.0,
+          "fat": 12.0
+        },
+        "ensemble_50_50": {
+          "calories": 300.0,
+          "protein": 22.5,
+          "carbs": 3.5,
+          "fat": 16.0
+        }
+      }
+    },
+    "dish_1562963289": {
+      "reference": {
+        "calories": 349.917969,
+        "mass_g": 180.0,
+        "fat": 12.685999,
+        "carbs": 43.364002,
+        "protein": 15.52
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 950.0,
+          "protein": 40.0,
+          "carbs": 100.0,
+          "fat": 40.0
+        },
+        "hf_image": {
+          "calories": 500.0,
+          "protein": 20.0,
+          "carbs": 60.0,
+          "fat": 25.0
+        },
+        "hf_image_text": {
+          "calories": 500.0,
+          "protein": 25.0,
+          "carbs": 60.0,
+          "fat": 30.0
+        },
+        "openai_image_text": {
+          "calories": 800.0,
+          "protein": 30.0,
+          "carbs": 90.0,
+          "fat": 35.0
+        },
+        "ensemble_50_50": {
+          "calories": 725.0,
+          "protein": 30.0,
+          "carbs": 80.0,
+          "fat": 32.5
+        }
+      }
+    },
+    "dish_1561667207": {
+      "reference": {
+        "calories": 249.444839,
+        "mass_g": 121.0,
+        "fat": 11.420783,
+        "carbs": 13.358226,
+        "protein": 22.073404
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 600.0,
+          "protein": 30.0,
+          "carbs": 80.0,
+          "fat": 15.0
+        },
+        "hf_image": {
+          "calories": 500.0,
+          "protein": 30.0,
+          "carbs": 60.0,
+          "fat": 25.0
+        },
+        "hf_image_text": {
+          "calories": 500.0,
+          "protein": 30.0,
+          "carbs": 70.0,
+          "fat": 20.0
+        },
+        "openai_image_text": {
+          "calories": 600.0,
+          "protein": 30.0,
+          "carbs": 70.0,
+          "fat": 20.0
+        },
+        "ensemble_50_50": {
+          "calories": 550.0,
+          "protein": 30.0,
+          "carbs": 70.0,
+          "fat": 20.0
+        }
+      }
+    },
+    "dish_1559849097": {
+      "reference": {
+        "calories": 495.928009,
+        "mass_g": 325.0,
+        "fat": 29.044003,
+        "carbs": 55.626003,
+        "protein": 14.261001
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 350.0,
+          "protein": 6.0,
+          "carbs": 45.0,
+          "fat": 15.0
+        },
+        "hf_image": {
+          "calories": 350.0,
+          "protein": 5.0,
+          "carbs": 40.0,
+          "fat": 12.0
+        },
+        "hf_image_text": {
+          "calories": 350.0,
+          "protein": 5.0,
+          "carbs": 40.0,
+          "fat": 12.0
+        },
+        "openai_image_text": {
+          "calories": 400.0,
+          "protein": 10.0,
+          "carbs": 50.0,
+          "fat": 20.0
+        },
+        "ensemble_50_50": {
+          "calories": 350.0,
+          "protein": 5.5,
+          "carbs": 42.5,
+          "fat": 13.5
+        }
+      }
+    },
+    "dish_1565118729": {
+      "reference": {
+        "calories": 435.493286,
+        "mass_g": 248.0,
+        "fat": 24.26512,
+        "carbs": 9.017551,
+        "protein": 41.902988
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 650.0,
+          "protein": 40.0,
+          "carbs": 70.0,
+          "fat": 25.0
+        },
+        "hf_image": {
+          "calories": 500.0,
+          "protein": 40.0,
+          "carbs": 20.0,
+          "fat": 30.0
+        },
+        "hf_image_text": {
+          "calories": 500.0,
+          "protein": 30.0,
+          "carbs": 20.0,
+          "fat": 25.0
+        },
+        "openai_image_text": {
+          "calories": 600.0,
+          "protein": 40.0,
+          "carbs": 50.0,
+          "fat": 25.0
+        },
+        "ensemble_50_50": {
+          "calories": 575.0,
+          "protein": 40.0,
+          "carbs": 45.0,
+          "fat": 27.5
+        }
+      }
+    },
+    "dish_1565898402": {
+      "reference": {
+        "calories": 384.799225,
+        "mass_g": 229.0,
+        "fat": 19.544107,
+        "carbs": 9.462811,
+        "protein": 39.424374
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 800.0,
+          "protein": 45.0,
+          "carbs": 90.0,
+          "fat": 30.0
+        },
+        "hf_image": {
+          "calories": 600.0,
+          "protein": 35.0,
+          "carbs": 70.0,
+          "fat": 25.0
+        },
+        "hf_image_text": {
+          "calories": 600.0,
+          "protein": 35.0,
+          "carbs": 50.0,
+          "fat": 25.0
+        },
+        "openai_image_text": {
+          "calories": 800.0,
+          "protein": 50.0,
+          "carbs": 90.0,
+          "fat": 30.0
+        },
+        "ensemble_50_50": {
+          "calories": 700.0,
+          "protein": 40.0,
+          "carbs": 80.0,
+          "fat": 27.5
+        }
+      }
+    },
+    "dish_1566838407": {
+      "reference": {
+        "calories": 358.947601,
+        "mass_g": 558.0,
+        "fat": 9.825659,
+        "carbs": 62.420345,
+        "protein": 9.731463
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 600.0,
+          "protein": 20.0,
+          "carbs": 80.0,
+          "fat": 25.0
+        },
+        "hf_image": {
+          "calories": 350.0,
+          "protein": 10.0,
+          "carbs": 45.0,
+          "fat": 12.0
+        },
+        "hf_image_text": {
+          "calories": 450.0,
+          "protein": 15.0,
+          "carbs": 50.0,
+          "fat": 10.0
+        },
+        "openai_image_text": {
+          "calories": 450.0,
+          "protein": 15.0,
+          "carbs": 70.0,
+          "fat": 15.0
+        },
+        "ensemble_50_50": {
+          "calories": 475.0,
+          "protein": 15.0,
+          "carbs": 62.5,
+          "fat": 18.5
+        }
+      }
+    },
+    "dish_1565638599": {
+      "reference": {
+        "calories": 368.698364,
+        "mass_g": 279.0,
+        "fat": 15.76237,
+        "carbs": 23.103624,
+        "protein": 32.858444
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 800.0,
+          "protein": 50.0,
+          "carbs": 70.0,
+          "fat": 30.0
+        },
+        "hf_image": {
+          "calories": 600.0,
+          "protein": 35.0,
+          "carbs": 70.0,
+          "fat": 20.0
+        },
+        "hf_image_text": {
+          "calories": 600.0,
+          "protein": 35.0,
+          "carbs": 50.0,
+          "fat": 20.0
+        },
+        "openai_image_text": {
+          "calories": 700.0,
+          "protein": 50.0,
+          "carbs": 80.0,
+          "fat": 25.0
+        },
+        "ensemble_50_50": {
+          "calories": 700.0,
+          "protein": 42.5,
+          "carbs": 70.0,
+          "fat": 25.0
+        }
+      }
+    },
+    "dish_1563389626": {
+      "reference": {
+        "calories": 498.620026,
+        "mass_g": 360.0,
+        "fat": 30.181793,
+        "carbs": 12.393457,
+        "protein": 45.326939
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 450.0,
+          "protein": 35.0,
+          "carbs": 20.0,
+          "fat": 25.0
+        },
+        "hf_image": {
+          "calories": 350.0,
+          "protein": 10.0,
+          "carbs": 30.0,
+          "fat": 15.0
+        },
+        "hf_image_text": {
+          "calories": 350.0,
+          "protein": 25.0,
+          "carbs": 15.0,
+          "fat": 10.0
+        },
+        "openai_image_text": {
+          "calories": 450.0,
+          "protein": 35.0,
+          "carbs": 30.0,
+          "fat": 20.0
+        },
+        "ensemble_50_50": {
+          "calories": 400.0,
+          "protein": 22.5,
+          "carbs": 25.0,
+          "fat": 20.0
+        }
+      }
+    },
+    "dish_1560368570": {
+      "reference": {
+        "calories": 555.932739,
+        "mass_g": 452.0,
+        "fat": 39.187859,
+        "carbs": 27.133636,
+        "protein": 46.5131
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 650.0,
+          "protein": 40.0,
+          "carbs": 75.0,
+          "fat": 20.0
+        },
+        "hf_image": {
+          "calories": 500.0,
+          "protein": 35.0,
+          "carbs": 20.0,
+          "fat": 25.0
+        },
+        "hf_image_text": {
+          "calories": 500.0,
+          "protein": 30.0,
+          "carbs": 40.0,
+          "fat": 25.0
+        },
+        "openai_image_text": {
+          "calories": 600.0,
+          "protein": 40.0,
+          "carbs": 70.0,
+          "fat": 20.0
+        },
+        "ensemble_50_50": {
+          "calories": 575.0,
+          "protein": 37.5,
+          "carbs": 47.5,
+          "fat": 22.5
+        }
+      }
+    },
+    "dish_1563909580": {
+      "reference": {
+        "calories": 544.311523,
+        "mass_g": 361.0,
+        "fat": 20.122177,
+        "carbs": 74.144119,
+        "protein": 18.481764
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 850.0,
+          "protein": 25.0,
+          "carbs": 110.0,
+          "fat": 35.0
+        },
+        "hf_image": {
+          "calories": 600.0,
+          "protein": 25.0,
+          "carbs": 80.0,
+          "fat": 15.0
+        },
+        "hf_image_text": {
+          "calories": 600.0,
+          "protein": 25.0,
+          "carbs": 75.0,
+          "fat": 30.0
+        },
+        "openai_image_text": {
+          "calories": 800.0,
+          "protein": 25.0,
+          "carbs": 100.0,
+          "fat": 30.0
+        },
+        "ensemble_50_50": {
+          "calories": 725.0,
+          "protein": 25.0,
+          "carbs": 95.0,
+          "fat": 25.0
+        }
+      }
+    },
+    "dish_1563565508": {
+      "reference": {
+        "calories": 403.862,
+        "mass_g": 387.0,
+        "fat": 24.761736,
+        "carbs": 32.026699,
+        "protein": 26.264353
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 850.0,
+          "protein": 45.0,
+          "carbs": 75.0,
+          "fat": 40.0
+        },
+        "hf_image": {
+          "calories": 450.0,
+          "protein": 25.0,
+          "carbs": 50.0,
+          "fat": 15.0
+        },
+        "hf_image_text": {
+          "calories": 450.0,
+          "protein": 25.0,
+          "carbs": 60.0,
+          "fat": 15.0
+        },
+        "openai_image_text": {
+          "calories": 650.0,
+          "protein": 35.0,
+          "carbs": 60.0,
+          "fat": 30.0
+        },
+        "ensemble_50_50": {
+          "calories": 650.0,
+          "protein": 35.0,
+          "carbs": 62.5,
+          "fat": 27.5
+        }
+      }
+    },
+    "dish_1562700593": {
+      "reference": {
+        "calories": 385.773926,
+        "mass_g": 384.0,
+        "fat": 29.806803,
+        "carbs": 18.611984,
+        "protein": 37.046314
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 650.0,
+          "protein": 40.0,
+          "carbs": 70.0,
+          "fat": 25.0
+        },
+        "hf_image": {
+          "calories": 600.0,
+          "protein": 40.0,
+          "carbs": 50.0,
+          "fat": 30.0
+        },
+        "hf_image_text": {
+          "calories": 600.0,
+          "protein": 40.0,
+          "carbs": 50.0,
+          "fat": 30.0
+        },
+        "openai_image_text": {
+          "calories": 650.0,
+          "protein": 40.0,
+          "carbs": 70.0,
+          "fat": 25.0
+        },
+        "ensemble_50_50": {
+          "calories": 625.0,
+          "protein": 40.0,
+          "carbs": 60.0,
+          "fat": 27.5
+        }
+      }
+    },
+    "dish_1562618000": {
+      "reference": {
+        "calories": 685.993896,
+        "mass_g": 448.0,
+        "fat": 36.103981,
+        "carbs": 30.821442,
+        "protein": 59.159676
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 650.0,
+          "protein": 40.0,
+          "carbs": 75.0,
+          "fat": 20.0
+        },
+        "hf_image": {
+          "calories": 450.0,
+          "protein": 30.0,
+          "carbs": 35.0,
+          "fat": 15.0
+        },
+        "hf_image_text": {
+          "calories": 500.0,
+          "protein": 35.0,
+          "carbs": 50.0,
+          "fat": 20.0
+        },
+        "openai_image_text": {
+          "calories": 600.0,
+          "protein": 40.0,
+          "carbs": 70.0,
+          "fat": 20.0
+        },
+        "ensemble_50_50": {
+          "calories": 550.0,
+          "protein": 35.0,
+          "carbs": 55.0,
+          "fat": 17.5
+        }
+      }
+    },
+    "dish_1558719994": {
+      "reference": {
+        "calories": 768.873047,
+        "mass_g": 133.0,
+        "fat": 65.834999,
+        "carbs": 30.191,
+        "protein": 29.792002
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 600.0,
+          "protein": 20.0,
+          "carbs": 30.0,
+          "fat": 50.0
+        },
+        "hf_image": {
+          "calories": 250.0,
+          "protein": 5.0,
+          "carbs": 10.0,
+          "fat": 20.0
+        },
+        "hf_image_text": {
+          "calories": 200.0,
+          "protein": 3.0,
+          "carbs": 5.0,
+          "fat": 15.0
+        },
+        "openai_image_text": {
+          "calories": 200.0,
+          "protein": 7.0,
+          "carbs": 6.0,
+          "fat": 18.0
+        },
+        "ensemble_50_50": {
+          "calories": 425.0,
+          "protein": 12.5,
+          "carbs": 20.0,
+          "fat": 35.0
+        }
+      }
+    },
+    "dish_1566502573": {
+      "reference": {
+        "calories": 821.510193,
+        "mass_g": 487.0,
+        "fat": 43.20623,
+        "carbs": 60.718185,
+        "protein": 51.18927
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 800.0,
+          "protein": 45.0,
+          "carbs": 100.0,
+          "fat": 30.0
+        },
+        "hf_image": {
+          "calories": 600.0,
+          "protein": 40.0,
+          "carbs": 60.0,
+          "fat": 25.0
+        },
+        "hf_image_text": {
+          "calories": 600.0,
+          "protein": 40.0,
+          "carbs": 80.0,
+          "fat": 25.0
+        },
+        "openai_image_text": {
+          "calories": 800.0,
+          "protein": 50.0,
+          "carbs": 90.0,
+          "fat": 30.0
+        },
+        "ensemble_50_50": {
+          "calories": 700.0,
+          "protein": 42.5,
+          "carbs": 80.0,
+          "fat": 27.5
+        }
+      }
+    },
+    "dish_1565898230": {
+      "reference": {
+        "calories": 780.202026,
+        "mass_g": 500.0,
+        "fat": 42.676907,
+        "carbs": 19.73115,
+        "protein": 73.94603
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 800.0,
+          "protein": 45.0,
+          "carbs": 90.0,
+          "fat": 30.0
+        },
+        "hf_image": {
+          "calories": 600.0,
+          "protein": 30.0,
+          "carbs": 70.0,
+          "fat": 25.0
+        },
+        "hf_image_text": {
+          "calories": 600.0,
+          "protein": 35.0,
+          "carbs": 50.0,
+          "fat": 25.0
+        },
+        "openai_image_text": {
+          "calories": 800.0,
+          "protein": 50.0,
+          "carbs": 90.0,
+          "fat": 30.0
+        },
+        "ensemble_50_50": {
+          "calories": 700.0,
+          "protein": 37.5,
+          "carbs": 80.0,
+          "fat": 27.5
+        }
+      }
+    },
+    "dish_1558372948": {
+      "reference": {
+        "calories": 687.939026,
+        "mass_g": 119.0,
+        "fat": 58.904999,
+        "carbs": 27.013,
+        "protein": 26.656
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 600.0,
+          "protein": 20.0,
+          "carbs": 30.0,
+          "fat": 50.0
+        },
+        "hf_image": {
+          "calories": 250.0,
+          "protein": 5.0,
+          "carbs": 10.0,
+          "fat": 20.0
+        },
+        "hf_image_text": {
+          "calories": 200.0,
+          "protein": 5.0,
+          "carbs": 10.0,
+          "fat": 15.0
+        },
+        "openai_image_text": {
+          "calories": 200.0,
+          "protein": 7.0,
+          "carbs": 6.0,
+          "fat": 18.0
+        },
+        "ensemble_50_50": {
+          "calories": 425.0,
+          "protein": 12.5,
+          "carbs": 20.0,
+          "fat": 35.0
+        }
+      }
+    },
+    "dish_1558630325": {
+      "reference": {
+        "calories": 751.541992,
+        "mass_g": 269.0,
+        "fat": 58.078003,
+        "carbs": 46.563999,
+        "protein": 27.081001
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 350.0,
+          "protein": 8.0,
+          "carbs": 40.0,
+          "fat": 20.0
+        },
+        "hf_image": {
+          "calories": 350.0,
+          "protein": 5.0,
+          "carbs": 40.0,
+          "fat": 15.0
+        },
+        "hf_image_text": {
+          "calories": 350.0,
+          "protein": 5.0,
+          "carbs": 30.0,
+          "fat": 15.0
+        },
+        "openai_image_text": {
+          "calories": 450.0,
+          "protein": 10.0,
+          "carbs": 50.0,
+          "fat": 25.0
+        },
+        "ensemble_50_50": {
+          "calories": 350.0,
+          "protein": 6.5,
+          "carbs": 40.0,
+          "fat": 17.5
+        }
+      }
+    },
+    "dish_1558376984": {
+      "reference": {
+        "calories": 671.67804,
+        "mass_g": 350.0,
+        "fat": 45.584,
+        "carbs": 30.23,
+        "protein": 45.440006
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 600.0,
+          "protein": 25.0,
+          "carbs": 40.0,
+          "fat": 40.0
+        },
+        "hf_image": {
+          "calories": 350.0,
+          "protein": 10.0,
+          "carbs": 45.0,
+          "fat": 12.0
+        },
+        "hf_image_text": {
+          "calories": 450.0,
+          "protein": 15.0,
+          "carbs": 50.0,
+          "fat": 20.0
+        },
+        "openai_image_text": {
+          "calories": 600.0,
+          "protein": 25.0,
+          "carbs": 50.0,
+          "fat": 35.0
+        },
+        "ensemble_50_50": {
+          "calories": 475.0,
+          "protein": 17.5,
+          "carbs": 42.5,
+          "fat": 26.0
+        }
+      }
+    },
+    "dish_1558630207": {
+      "reference": {
+        "calories": 670.596008,
+        "mass_g": 116.0,
+        "fat": 57.420002,
+        "carbs": 26.332001,
+        "protein": 25.984001
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 600.0,
+          "protein": 20.0,
+          "carbs": 30.0,
+          "fat": 50.0
+        },
+        "hf_image": {
+          "calories": 250.0,
+          "protein": 5.0,
+          "carbs": 10.0,
+          "fat": 20.0
+        },
+        "hf_image_text": {
+          "calories": 200.0,
+          "protein": 5.0,
+          "carbs": 10.0,
+          "fat": 15.0
+        },
+        "openai_image_text": {
+          "calories": 600.0,
+          "protein": 21.0,
+          "carbs": 21.0,
+          "fat": 52.0
+        },
+        "ensemble_50_50": {
+          "calories": 425.0,
+          "protein": 12.5,
+          "carbs": 20.0,
+          "fat": 35.0
+        }
+      }
+    },
+    "dish_1568305257": {
+      "reference": {
+        "calories": 837.147766,
+        "mass_g": 420.0,
+        "fat": 65.496887,
+        "carbs": 9.31325,
+        "protein": 52.072983
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 450.0,
+          "protein": 30.0,
+          "carbs": 20.0,
+          "fat": 30.0
+        },
+        "hf_image": {
+          "calories": 450.0,
+          "protein": 20.0,
+          "carbs": 15.0,
+          "fat": 25.0
+        },
+        "hf_image_text": {
+          "calories": 450.0,
+          "protein": 25.0,
+          "carbs": 15.0,
+          "fat": 20.0
+        },
+        "openai_image_text": {
+          "calories": 550.0,
+          "protein": 35.0,
+          "carbs": 20.0,
+          "fat": 35.0
+        },
+        "ensemble_50_50": {
+          "calories": 450.0,
+          "protein": 25.0,
+          "carbs": 17.5,
+          "fat": 27.5
+        }
+      }
+    },
+    "dish_1558375667": {
+      "reference": {
+        "calories": 687.939026,
+        "mass_g": 119.0,
+        "fat": 58.904999,
+        "carbs": 27.013,
+        "protein": 26.656
+      },
+      "predictions": {
+        "openai_text": {
+          "calories": 600.0,
+          "protein": 20.0,
+          "carbs": 30.0,
+          "fat": 50.0
+        },
+        "hf_image": {
+          "calories": 250.0,
+          "protein": 5.0,
+          "carbs": 10.0,
+          "fat": 20.0
+        },
+        "hf_image_text": {
+          "calories": 200.0,
+          "protein": 3.0,
+          "carbs": 10.0,
+          "fat": 15.0
+        },
+        "openai_image_text": {
+          "calories": 200.0,
+          "protein": 7.0,
+          "carbs": 6.0,
+          "fat": 18.0
+        },
+        "ensemble_50_50": {
+          "calories": 425.0,
+          "protein": 12.5,
+          "carbs": 20.0,
+          "fat": 35.0
+        }
+      }
+    }
+  },
+  "combination_comparisons": {
+    "food_image_text_vs_food_image": {
+      "calories": {
+        "n": 30,
+        "mae_difference_candidate_minus_baseline": 1.070159933333332,
+        "bootstrap_95_percent_interval": [
+          -15.596506733333337,
+          19.403493266666665
+        ],
+        "candidate_better_n": 5,
+        "ties_n": 19
+      },
+      "protein": {
+        "n": 30,
+        "mae_difference_candidate_minus_baseline": -0.35,
+        "bootstrap_95_percent_interval": [
+          -1.9166666666666667,
+          1.0333333333333334
+        ],
+        "candidate_better_n": 6,
+        "ties_n": 17
+      }
+    },
+    "average_vs_food_image": {
+      "calories": {
+        "n": 30,
+        "mae_difference_candidate_minus_baseline": 5.674644000000001,
+        "bootstrap_95_percent_interval": [
+          -26.769881133333328,
+          41.07015993333333
+        ],
+        "candidate_better_n": 14,
+        "ties_n": 3
+      },
+      "protein": {
+        "n": 30,
+        "mae_difference_candidate_minus_baseline": -1.6472484666666667,
+        "bootstrap_95_percent_interval": [
+          -3.7489582666666665,
+          0.21475293333333337
+        ],
+        "candidate_better_n": 16,
+        "ties_n": 5
+      }
+    },
+    "openai_image_text_vs_food_image": {
+      "calories": {
+        "n": 30,
+        "mae_difference_candidate_minus_baseline": -1.505491066666669,
+        "bootstrap_95_percent_interval": [
+          -45.69301346666667,
+          43.87655646666666
+        ],
+        "candidate_better_n": 15,
+        "ties_n": 0
+      },
+      "protein": {
+        "n": 30,
+        "mae_difference_candidate_minus_baseline": -1.9292484666666667,
+        "bootstrap_95_percent_interval": [
+          -4.744958266666667,
+          0.7040848666666667
+        ],
+        "candidate_better_n": 14,
+        "ties_n": 5
+      }
+    }
+  }
+}

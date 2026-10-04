@@ -1,0 +1,1654 @@
+{
+  "seed": 20260918,
+  "dataset": "Nutrition5k",
+  "sources": {
+    "dish_ids/splits/rgb_test_ids.txt": {
+      "url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/dish_ids/splits/rgb_test_ids.txt",
+      "sha256": "560ff0eedb1a2027c21f5da3a4c38a53fa201c87d108e76b11cceaa1d956ac8e"
+    },
+    "dish_ids/splits/rgb_train_ids.txt": {
+      "url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/dish_ids/splits/rgb_train_ids.txt",
+      "sha256": "efd34a682b5483b01e6bd0a7c1267efec28440a8194985f9d3817d8ebc8169bd"
+    },
+    "metadata/dish_metadata_cafe1.csv": {
+      "url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/metadata/dish_metadata_cafe1.csv",
+      "sha256": "881df31f27c2343d0ce219964527e0796f6ddadd60701ce6840fa801e8c2a960"
+    },
+    "metadata/dish_metadata_cafe2.csv": {
+      "url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/metadata/dish_metadata_cafe2.csv",
+      "sha256": "ef9f800d7b9c2e7e9a9e7cda5cbb4cfe51c760a8c1af4c05786ccf051bf5d77d"
+    }
+  },
+  "skipped": [
+    {
+      "dish_id": "dish_1551390930",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550705288",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551227380",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550707958",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1562617972",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550777218",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551493311",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550706037",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550706766",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550707056",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550707110",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550707156",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550707578",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550708638",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550708702",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550708875",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550709028",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550709129",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550710612",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550710758",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550710793",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550711314",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550711385",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550712459",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550712486",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550712524",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550712622",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550712654",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550712729",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550712805",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550712839",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550712877",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550713065",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550713114",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550713174",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550769882",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550770511",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550771387",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550771648",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550771707",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550772270",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550772551",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550772617",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550772753",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550772849",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550772892",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550773162",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550773200",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550773284",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550773949",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550774895",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550775126",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550775318",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550775363",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550775393",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550776907",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550776957",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550777511",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550777566",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550779014",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550779282",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550779336",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550779388",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550785975",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550789705",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550789860",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550790042",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550791884",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550791942",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550793621",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550793673",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550795455",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550795497",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550797692",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550797791",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550797833",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550859578",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550859622",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550860513",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550861124",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550861187",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550861703",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550861835",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550862349",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550862399",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550873303",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550873788",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550875347",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550875400",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550876012",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1550876055",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551135363",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551135415",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551136769",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551136814",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551137277",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551137348",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551139874",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551139956",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551223346",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551223394",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551225501",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551225541",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551226049",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551226101",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551233827",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551233859",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551235240",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551235270",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551235759",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551236011",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551236159",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551236495",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551236521",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551236550",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551236775",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551236827",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551237046",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551237527",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551237558",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551237814",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551237854",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551303437",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551303476",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551304608",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551304741",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551306339",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551306375",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551323035",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551323073",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551373738",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551373813",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551375848",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551376575",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551377473",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551377828",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551377874",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551378054",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551378151",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551378179",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551379605",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551379654",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551379788",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551379881",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551379922",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551381050",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551381103",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551381990",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551382149",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551391586",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551393113",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551393161",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551393210",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551396309",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551399449",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551399484",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551488861",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551489931",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551489961",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551490701",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551490767",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551490819",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551491179",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551491297",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551491326",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551492348",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551492369",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551492468",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551492561",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551492590",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551492975",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551493005",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551493159",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551493278",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551493749",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551493773",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551493854",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551493916",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551494147",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551494178",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551563337",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551563400",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551563429",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551565996",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551566130",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551566316",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551566356",
+      "reason": "overhead image unavailable"
+    },
+    {
+      "dish_id": "dish_1551567230",
+      "reason": "overhead image unavailable"
+    }
+  ],
+  "smoke": {
+    "dish_id": "dish_1557853429",
+    "ingredients": [
+      "eggs",
+      "strawberries",
+      "yam"
+    ],
+    "reference": {
+      "calories": 330.152985,
+      "mass_g": 276.0,
+      "fat": 13.586999,
+      "carbs": 33.413998,
+      "protein": 17.637001
+    },
+    "image_path": "data/images/dish_1557853429.png",
+    "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1557853429/rgb.png",
+    "image_sha256": "0db3b1982ce8607d7a1717791e8521483d6bec314baa14e4b52e02f5cada2822"
+  },
+  "samples": [
+    {
+      "dish_id": "dish_1561739212",
+      "ingredients": [
+        "berries",
+        "egg whites",
+        "sweet potato"
+      ],
+      "reference": {
+        "calories": 134.01001,
+        "mass_g": 214.0,
+        "fat": 0.325,
+        "carbs": 23.797001,
+        "protein": 8.347
+      },
+      "image_path": "data/images/dish_1561739212.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1561739212/rgb.png",
+      "image_sha256": "f307d5cfd5adfe7e73549ba497ff7f4642e382913011ad7662aa5b473dc517d9",
+      "stratum_kcal": [
+        50,
+        350
+      ]
+    },
+    {
+      "dish_id": "dish_1565896701",
+      "ingredients": [
+        "cauliflower",
+        "chard",
+        "garlic",
+        "kale",
+        "lime",
+        "olive oil",
+        "salt",
+        "steak",
+        "wheat berry"
+      ],
+      "reference": {
+        "calories": 294.47345,
+        "mass_g": 184.0,
+        "fat": 18.184381,
+        "carbs": 8.322058,
+        "protein": 25.74716
+      },
+      "image_path": "data/images/dish_1565896701.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1565896701/rgb.png",
+      "image_sha256": "9b78d00087b2b8036767bd3bd3d61d613e8ce5c5e7c3be313e19822ece14fd4d",
+      "stratum_kcal": [
+        50,
+        350
+      ]
+    },
+    {
+      "dish_id": "dish_1558376768",
+      "ingredients": [
+        "deprecated"
+      ],
+      "reference": {
+        "calories": 74.360001,
+        "mass_g": 143.0,
+        "fat": 0.286,
+        "carbs": 0.429,
+        "protein": 20.02
+      },
+      "image_path": "data/images/dish_1558376768.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1558376768/rgb.png",
+      "image_sha256": "a20c1d7c73480059191add141b396f7644dd12f6e16fae929dd18dff2b33ad44",
+      "stratum_kcal": [
+        50,
+        350
+      ]
+    },
+    {
+      "dish_id": "dish_1562099053",
+      "ingredients": [
+        "cheese pizza"
+      ],
+      "reference": {
+        "calories": 98.382996,
+        "mass_g": 37.0,
+        "fat": 3.478,
+        "carbs": 12.395,
+        "protein": 4.144
+      },
+      "image_path": "data/images/dish_1562099053.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1562099053/rgb.png",
+      "image_sha256": "1f5a38627fd92308ac819275ad3824743247582ef820f90cbc13450216ac3c77",
+      "stratum_kcal": [
+        50,
+        350
+      ]
+    },
+    {
+      "dish_id": "dish_1563220987",
+      "ingredients": [
+        "arugula",
+        "garlic",
+        "olive oil",
+        "onions",
+        "parsley",
+        "pork",
+        "rosemary",
+        "salt",
+        "white rice",
+        "zucchini"
+      ],
+      "reference": {
+        "calories": 224.987503,
+        "mass_g": 110.0,
+        "fat": 12.479591,
+        "carbs": 4.072388,
+        "protein": 22.457699
+      },
+      "image_path": "data/images/dish_1563220987.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1563220987/rgb.png",
+      "image_sha256": "e3c29090de323cd6ab709f711eec18636d23fafcc942fb79d54016535e84bac9",
+      "stratum_kcal": [
+        50,
+        350
+      ]
+    },
+    {
+      "dish_id": "dish_1558717604",
+      "ingredients": [
+        "apple"
+      ],
+      "reference": {
+        "calories": 73.839996,
+        "mass_g": 142.0,
+        "fat": 0.284,
+        "carbs": 19.879999,
+        "protein": 0.426
+      },
+      "image_path": "data/images/dish_1558717604.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1558717604/rgb.png",
+      "image_sha256": "14f8fc3d71f04087c4f64a7d2cfacb070c28270ac00ff06490abfda020d3df48",
+      "stratum_kcal": [
+        50,
+        350
+      ]
+    },
+    {
+      "dish_id": "dish_1558635618",
+      "ingredients": [
+        "apple",
+        "cauliflower",
+        "corn on the cob",
+        "white rice"
+      ],
+      "reference": {
+        "calories": 220.253998,
+        "mass_g": 334.0,
+        "fat": 2.439,
+        "carbs": 49.700001,
+        "protein": 5.606
+      },
+      "image_path": "data/images/dish_1558635618.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1558635618/rgb.png",
+      "image_sha256": "fbbc1c24459019f8d784770dcd3c39865a18ad39554c265d871f8f986b266ed6",
+      "stratum_kcal": [
+        50,
+        350
+      ]
+    },
+    {
+      "dish_id": "dish_1565020796",
+      "ingredients": [
+        "bacon",
+        "egg whites"
+      ],
+      "reference": {
+        "calories": 90.599998,
+        "mass_g": 99.0,
+        "fat": 3.542,
+        "carbs": 0.749,
+        "protein": 12.06
+      },
+      "image_path": "data/images/dish_1565020796.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1565020796/rgb.png",
+      "image_sha256": "c919c02d7cceb2b14a7e369a240f78b04542ac378f67cfda7db9c09565c9c8bf",
+      "stratum_kcal": [
+        50,
+        350
+      ]
+    },
+    {
+      "dish_id": "dish_1562963289",
+      "ingredients": [
+        "caesar salad",
+        "cheese pizza"
+      ],
+      "reference": {
+        "calories": 349.917969,
+        "mass_g": 180.0,
+        "fat": 12.685999,
+        "carbs": 43.364002,
+        "protein": 15.52
+      },
+      "image_path": "data/images/dish_1562963289.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1562963289/rgb.png",
+      "image_sha256": "16b27ddf77305458704f04e39532005177f93ca1675cde790d9b28253f23f6a3",
+      "stratum_kcal": [
+        50,
+        350
+      ]
+    },
+    {
+      "dish_id": "dish_1561667207",
+      "ingredients": [
+        "bok choy",
+        "garlic",
+        "pepper",
+        "pork",
+        "salt",
+        "soy sauce",
+        "sugar",
+        "white rice"
+      ],
+      "reference": {
+        "calories": 249.444839,
+        "mass_g": 121.0,
+        "fat": 11.420783,
+        "carbs": 13.358226,
+        "protein": 22.073404
+      },
+      "image_path": "data/images/dish_1561667207.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1561667207/rgb.png",
+      "image_sha256": "fc856c4a8cfd66c20c8d7db3713c8bbd8814d93ccaef74dab09b9c7e448749f8",
+      "stratum_kcal": [
+        50,
+        350
+      ]
+    },
+    {
+      "dish_id": "dish_1559849097",
+      "ingredients": [
+        "almonds",
+        "grapes",
+        "pears"
+      ],
+      "reference": {
+        "calories": 495.928009,
+        "mass_g": 325.0,
+        "fat": 29.044003,
+        "carbs": 55.626003,
+        "protein": 14.261001
+      },
+      "image_path": "data/images/dish_1559849097.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1559849097/rgb.png",
+      "image_sha256": "cd9ab89e16b268c53e1cbf5db6d0160ac4742dfe3947ead876bb9913fed81e4f",
+      "stratum_kcal": [
+        350,
+        650
+      ]
+    },
+    {
+      "dish_id": "dish_1565118729",
+      "ingredients": [
+        "beef",
+        "bok choy",
+        "chard",
+        "kale",
+        "millet",
+        "olive oil",
+        "onions",
+        "salt",
+        "shallots",
+        "spinach (cooked)",
+        "vinegar"
+      ],
+      "reference": {
+        "calories": 435.493286,
+        "mass_g": 248.0,
+        "fat": 24.26512,
+        "carbs": 9.017551,
+        "protein": 41.902988
+      },
+      "image_path": "data/images/dish_1565118729.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1565118729/rgb.png",
+      "image_sha256": "bf71f0942c7ab58d7a644ddda184d649ee8c2867267dafe01bb41094164f0f78",
+      "stratum_kcal": [
+        350,
+        650
+      ]
+    },
+    {
+      "dish_id": "dish_1565898402",
+      "ingredients": [
+        "beef",
+        "bok choy",
+        "brown rice",
+        "chili",
+        "cilantro",
+        "garlic",
+        "ginger",
+        "green beans",
+        "jalapenos",
+        "lemon juice",
+        "lime",
+        "millet",
+        "olive oil",
+        "onions",
+        "salmon",
+        "salt",
+        "shallots",
+        "spinach (cooked)",
+        "spinach (raw)",
+        "vinegar"
+      ],
+      "reference": {
+        "calories": 384.799225,
+        "mass_g": 229.0,
+        "fat": 19.544107,
+        "carbs": 9.462811,
+        "protein": 39.424374
+      },
+      "image_path": "data/images/dish_1565898402.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1565898402/rgb.png",
+      "image_sha256": "33f29ac52f0c32d8551907de5fadbf77cdd7efa60861e367767fe6b53261ed4c",
+      "stratum_kcal": [
+        350,
+        650
+      ]
+    },
+    {
+      "dish_id": "dish_1566838407",
+      "ingredients": [
+        "berries",
+        "olive oil",
+        "pineapple",
+        "scrambled eggs",
+        "sweet potato",
+        "watermelon"
+      ],
+      "reference": {
+        "calories": 358.947601,
+        "mass_g": 558.0,
+        "fat": 9.825659,
+        "carbs": 62.420345,
+        "protein": 9.731463
+      },
+      "image_path": "data/images/dish_1566838407.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1566838407/rgb.png",
+      "image_sha256": "f040af5a2af7dd6f20037cc7dbc1c94ee5ed2d79240381754e71d7f99f33eaa5",
+      "stratum_kcal": [
+        350,
+        650
+      ]
+    },
+    {
+      "dish_id": "dish_1565638599",
+      "ingredients": [
+        "arugula",
+        "cherry tomatoes",
+        "chicken breast",
+        "garlic",
+        "green beans",
+        "olive oil",
+        "onions",
+        "parmesan cheese",
+        "parsley",
+        "pork",
+        "quinoa",
+        "rosemary",
+        "salt",
+        "spinach (raw)",
+        "thyme",
+        "wheat berry",
+        "white rice",
+        "zucchini"
+      ],
+      "reference": {
+        "calories": 368.698364,
+        "mass_g": 279.0,
+        "fat": 15.76237,
+        "carbs": 23.103624,
+        "protein": 32.858444
+      },
+      "image_path": "data/images/dish_1565638599.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1565638599/rgb.png",
+      "image_sha256": "42a7c850d96e6a4de303001a101e056a2d4a9cdbd4c9c8a35bbee16c4825d58f",
+      "stratum_kcal": [
+        350,
+        650
+      ]
+    },
+    {
+      "dish_id": "dish_1563389626",
+      "ingredients": [
+        "carrot",
+        "cherry tomatoes",
+        "grilled chicken",
+        "olive oil",
+        "pepper",
+        "salt"
+      ],
+      "reference": {
+        "calories": 498.620026,
+        "mass_g": 360.0,
+        "fat": 30.181793,
+        "carbs": 12.393457,
+        "protein": 45.326939
+      },
+      "image_path": "data/images/dish_1563389626.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1563389626/rgb.png",
+      "image_sha256": "ac61f72444153008ee0d019e3061106b7322b000e9eaf60eacc8af4ef051cf76",
+      "stratum_kcal": [
+        350,
+        650
+      ]
+    },
+    {
+      "dish_id": "dish_1560368570",
+      "ingredients": [
+        "arugula",
+        "basil",
+        "broccoli",
+        "brown rice",
+        "carrot",
+        "cherry tomatoes",
+        "country rice",
+        "fish",
+        "garlic",
+        "green onions",
+        "honeydew melons",
+        "lemon juice",
+        "lettuce",
+        "mixed greens",
+        "mustard",
+        "olive oil",
+        "onions",
+        "parsley",
+        "pepper",
+        "pork",
+        "pumpkin seeds",
+        "salt",
+        "shallots",
+        "vinegar"
+      ],
+      "reference": {
+        "calories": 555.932739,
+        "mass_g": 452.0,
+        "fat": 39.187859,
+        "carbs": 27.133636,
+        "protein": 46.5131
+      },
+      "image_path": "data/images/dish_1560368570.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1560368570/rgb.png",
+      "image_sha256": "674d948c11b0ff7bc32335122f3b364076fd979038bae71a1222161d0b49706b",
+      "stratum_kcal": [
+        350,
+        650
+      ]
+    },
+    {
+      "dish_id": "dish_1563909580",
+      "ingredients": [
+        "cheese pizza",
+        "cucumbers",
+        "fried rice",
+        "garlic",
+        "green beans",
+        "mustard",
+        "mustard greens",
+        "olive oil",
+        "salt",
+        "spinach (raw)",
+        "tomatoes",
+        "vinegar"
+      ],
+      "reference": {
+        "calories": 544.311523,
+        "mass_g": 361.0,
+        "fat": 20.122177,
+        "carbs": 74.144119,
+        "protein": 18.481764
+      },
+      "image_path": "data/images/dish_1563909580.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1563909580/rgb.png",
+      "image_sha256": "14e42294b03abbae995cc88f48446a6767c7871f59695777e6cfb5399b867dfd",
+      "stratum_kcal": [
+        350,
+        650
+      ]
+    },
+    {
+      "dish_id": "dish_1563565508",
+      "ingredients": [
+        "arugula",
+        "blueberries",
+        "bok choy",
+        "caesar dressing",
+        "carrot",
+        "celery",
+        "chard",
+        "cherry tomatoes",
+        "chive",
+        "corn on the cob",
+        "cream",
+        "croutons",
+        "eggs",
+        "fish",
+        "garlic",
+        "ground turkey",
+        "kale",
+        "lemon juice",
+        "mushroom",
+        "mustard",
+        "olive oil",
+        "onions",
+        "parmesan cheese",
+        "parsley",
+        "pecans",
+        "salt",
+        "shallots",
+        "thyme",
+        "vinegar",
+        "wheat berry",
+        "white rice"
+      ],
+      "reference": {
+        "calories": 403.862,
+        "mass_g": 387.0,
+        "fat": 24.761736,
+        "carbs": 32.026699,
+        "protein": 26.264353
+      },
+      "image_path": "data/images/dish_1563565508.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1563565508/rgb.png",
+      "image_sha256": "ae8907bfa7edb69771b7cd557977a933d7974f74202d107a8d82cee231af4b0d",
+      "stratum_kcal": [
+        350,
+        650
+      ]
+    },
+    {
+      "dish_id": "dish_1562700593",
+      "ingredients": [
+        "apple",
+        "artichokes",
+        "arugula",
+        "beef",
+        "bok choy",
+        "cauliflower",
+        "chive",
+        "corn",
+        "fish",
+        "garlic",
+        "lemon juice",
+        "lentils",
+        "millet",
+        "mixed greens",
+        "olive oil",
+        "onions",
+        "parsley",
+        "pepper",
+        "salt",
+        "shallots",
+        "snow peas",
+        "spinach (cooked)",
+        "vinegar"
+      ],
+      "reference": {
+        "calories": 385.773926,
+        "mass_g": 384.0,
+        "fat": 29.806803,
+        "carbs": 18.611984,
+        "protein": 37.046314
+      },
+      "image_path": "data/images/dish_1562700593.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1562700593/rgb.png",
+      "image_sha256": "198d1eed30af2b27726c845a803ed05de1e09eaf20f57838ef688aeaeac98e65",
+      "stratum_kcal": [
+        350,
+        650
+      ]
+    },
+    {
+      "dish_id": "dish_1562618000",
+      "ingredients": [
+        "arugula",
+        "basil",
+        "broccoli",
+        "brown rice",
+        "chicken thighs",
+        "chickpeas",
+        "garlic",
+        "lemon juice",
+        "mustard greens",
+        "olive oil",
+        "parsley",
+        "pepper",
+        "radishes",
+        "salt",
+        "thyme",
+        "vinegar"
+      ],
+      "reference": {
+        "calories": 685.993896,
+        "mass_g": 448.0,
+        "fat": 36.103981,
+        "carbs": 30.821442,
+        "protein": 59.159676
+      },
+      "image_path": "data/images/dish_1562618000.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1562618000/rgb.png",
+      "image_sha256": "ad2f0fd1276f116fbb3e92f410f4456f8066354547f6ff0ef684b43300a92f2c",
+      "stratum_kcal": [
+        650,
+        1500
+      ]
+    },
+    {
+      "dish_id": "dish_1558719994",
+      "ingredients": [
+        "almonds"
+      ],
+      "reference": {
+        "calories": 768.873047,
+        "mass_g": 133.0,
+        "fat": 65.834999,
+        "carbs": 30.191,
+        "protein": 29.792002
+      },
+      "image_path": "data/images/dish_1558719994.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1558719994/rgb.png",
+      "image_sha256": "26f4f624ef2f269af7612139c2a25919fd1dd8e771b45fc8576a850b81c8b528",
+      "stratum_kcal": [
+        650,
+        1500
+      ]
+    },
+    {
+      "dish_id": "dish_1566502573",
+      "ingredients": [
+        "arugula",
+        "basil",
+        "bok choy",
+        "brown rice",
+        "carrot",
+        "chard",
+        "chicken",
+        "chickpeas",
+        "chive",
+        "corn on the cob",
+        "cucumbers",
+        "garlic",
+        "lemon juice",
+        "mustard",
+        "mustard greens",
+        "olive oil",
+        "onions",
+        "parsley",
+        "pepper",
+        "pork",
+        "rosemary",
+        "salt",
+        "soy sauce",
+        "spinach (raw)",
+        "sugar",
+        "sun dried tomatoes",
+        "vinegar",
+        "white rice"
+      ],
+      "reference": {
+        "calories": 821.510193,
+        "mass_g": 487.0,
+        "fat": 43.20623,
+        "carbs": 60.718185,
+        "protein": 51.18927
+      },
+      "image_path": "data/images/dish_1566502573.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1566502573/rgb.png",
+      "image_sha256": "8a4c84ffb340e44794d0f9af35a037c8e477f7e2f39c36f6e6d6c2d2964b613c",
+      "stratum_kcal": [
+        650,
+        1500
+      ]
+    },
+    {
+      "dish_id": "dish_1565898230",
+      "ingredients": [
+        "beef",
+        "bell peppers",
+        "bok choy",
+        "brown rice",
+        "cherry tomatoes",
+        "chili",
+        "cilantro",
+        "cucumbers",
+        "feta cheese",
+        "garlic",
+        "ginger",
+        "green beans",
+        "jalapenos",
+        "lemon juice",
+        "lettuce",
+        "lime",
+        "millet",
+        "olive oil",
+        "olives",
+        "onions",
+        "salmon",
+        "salt",
+        "shallots",
+        "spinach (cooked)",
+        "spinach (raw)",
+        "vinaigrette",
+        "vinegar"
+      ],
+      "reference": {
+        "calories": 780.202026,
+        "mass_g": 500.0,
+        "fat": 42.676907,
+        "carbs": 19.73115,
+        "protein": 73.94603
+      },
+      "image_path": "data/images/dish_1565898230.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1565898230/rgb.png",
+      "image_sha256": "3ed30be2497a77ce603354fbddb1784a987ef0e8e405c0ed3fbd16f6d6cec832",
+      "stratum_kcal": [
+        650,
+        1500
+      ]
+    },
+    {
+      "dish_id": "dish_1558372948",
+      "ingredients": [
+        "almonds"
+      ],
+      "reference": {
+        "calories": 687.939026,
+        "mass_g": 119.0,
+        "fat": 58.904999,
+        "carbs": 27.013,
+        "protein": 26.656
+      },
+      "image_path": "data/images/dish_1558372948.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1558372948/rgb.png",
+      "image_sha256": "4181a90b0f03fea066f8495105a8a1daf062d6f19a3545830b9c9d76b3c6b878",
+      "stratum_kcal": [
+        650,
+        1500
+      ]
+    },
+    {
+      "dish_id": "dish_1558630325",
+      "ingredients": [
+        "almonds",
+        "apple",
+        "garden salad"
+      ],
+      "reference": {
+        "calories": 751.541992,
+        "mass_g": 269.0,
+        "fat": 58.078003,
+        "carbs": 46.563999,
+        "protein": 27.081001
+      },
+      "image_path": "data/images/dish_1558630325.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1558630325/rgb.png",
+      "image_sha256": "93ae3fc7acccf045af421c45a3c328b43ddbaeae706801ee8227229f57424f32",
+      "stratum_kcal": [
+        650,
+        1500
+      ]
+    },
+    {
+      "dish_id": "dish_1558376984",
+      "ingredients": [
+        "almonds",
+        "deprecated",
+        "grapes",
+        "mixed greens",
+        "sausage"
+      ],
+      "reference": {
+        "calories": 671.67804,
+        "mass_g": 350.0,
+        "fat": 45.584,
+        "carbs": 30.23,
+        "protein": 45.440006
+      },
+      "image_path": "data/images/dish_1558376984.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1558376984/rgb.png",
+      "image_sha256": "938ae5a917cfd056299193ec6d7f3e48f2570d016b97093ccdcc5ed4cd8009a2",
+      "stratum_kcal": [
+        650,
+        1500
+      ]
+    },
+    {
+      "dish_id": "dish_1558630207",
+      "ingredients": [
+        "almonds"
+      ],
+      "reference": {
+        "calories": 670.596008,
+        "mass_g": 116.0,
+        "fat": 57.420002,
+        "carbs": 26.332001,
+        "protein": 25.984001
+      },
+      "image_path": "data/images/dish_1558630207.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1558630207/rgb.png",
+      "image_sha256": "323f7b10715e660db8fae946232dc4bb8c83afe3d8371379654b402803831568",
+      "stratum_kcal": [
+        650,
+        1500
+      ]
+    },
+    {
+      "dish_id": "dish_1568305257",
+      "ingredients": [
+        "bell peppers",
+        "cucumbers",
+        "garlic",
+        "mustard",
+        "olive oil",
+        "radishes",
+        "salt",
+        "scrambled eggs",
+        "turkey bacon",
+        "vinegar"
+      ],
+      "reference": {
+        "calories": 837.147766,
+        "mass_g": 420.0,
+        "fat": 65.496887,
+        "carbs": 9.31325,
+        "protein": 52.072983
+      },
+      "image_path": "data/images/dish_1568305257.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1568305257/rgb.png",
+      "image_sha256": "a1c504bf2592630875fcdc05197b87bd9cae1710d5c792b3fe302d3db0324b53",
+      "stratum_kcal": [
+        650,
+        1500
+      ]
+    },
+    {
+      "dish_id": "dish_1558375667",
+      "ingredients": [
+        "almonds"
+      ],
+      "reference": {
+        "calories": 687.939026,
+        "mass_g": 119.0,
+        "fat": 58.904999,
+        "carbs": 27.013,
+        "protein": 26.656
+      },
+      "image_path": "data/images/dish_1558375667.png",
+      "image_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1558375667/rgb.png",
+      "image_sha256": "5ccbc7b46369827e5fad8f2bd3b1244d5f40a6e27cb00b1c0d049e13e9c4a7f0",
+      "stratum_kcal": [
+        650,
+        1500
+      ]
+    }
+  ]
+}

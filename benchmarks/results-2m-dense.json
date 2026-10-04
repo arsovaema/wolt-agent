@@ -1,0 +1,85 @@
+{
+  "schema": "benchmark_cc7698ad82e647b9afd06edb071721f9",
+  "rows": 2000000,
+  "concurrency": 20,
+  "requests": 100,
+  "cities": 100,
+  "restaurants": 10000,
+  "nominal_meals_per_city": 20000.0,
+  "fixture": "Bootstrapped observed menu nutrition/prices and stored real embeddings; synthetic cities, service areas, freshness and availability",
+  "limitations": [
+    "No live provider latency or spend",
+    "No HTTP/TLS/network or login load included",
+    "Not millions of distinct real menus; no human relevance labels",
+    "Unused global HNSW index omitted; this measures exact local retrieval, not ingestion throughput"
+  ],
+  "environment": {
+    "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+    "python": "3.13.9",
+    "postgres": "PostgreSQL 16.15 (Debian 16.15-1.pgdg12+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit"
+  },
+  "errors": [],
+  "observed_seed_meals": 295,
+  "fixture_size_bytes": "6958899200",
+  "load_seconds": 87.27,
+  "workload_seconds": 12.47,
+  "quality_phase": "separate from concurrent latency workload",
+  "retrieval_latency": {
+    "p50_ms": 2075.14,
+    "p95_ms": 3643.59,
+    "p99_ms": 3728.64
+  },
+  "planner_latency": {
+    "p50_ms": 131.29,
+    "p95_ms": 138.98,
+    "p99_ms": 148.54
+  },
+  "successful_requests": 100,
+  "candidate_max": 60,
+  "semantic_recall_at_12": 1.0,
+  "nutrition_recall_at_20": 0.025,
+  "distinct_nutrition_recall_at_20": 0.9,
+  "nutrition_best_score_regret": 0,
+  "quality_samples": 20,
+  "plan_coverage": 1.0,
+  "budget_compliance": 1.0,
+  "nutrition_fit_rate": 1.0,
+  "http_load": {
+    "concurrent_authenticated_users": 20,
+    "plan_workers": 2,
+    "submitted_requests": 20,
+    "poll_requests": 345,
+    "completed_users": 20,
+    "errors": [],
+    "submit_latency": {
+      "p50_ms": 27.22,
+      "p95_ms": 31.49,
+      "p99_ms": 31.59
+    },
+    "poll_latency": {
+      "p50_ms": 32.1,
+      "p95_ms": 601.75,
+      "p99_ms": 634.08
+    },
+    "queue_to_completion_latency": {
+      "p50_ms": 6945.69,
+      "p95_ms": 12339.11,
+      "p99_ms": 12349.29
+    },
+    "planned_days": 140,
+    "budget_compliance": 1.0,
+    "nutrition_fit_rate": 1.0,
+    "transport": "ASGI in-process; excludes TCP/TLS and external providers"
+  },
+  "passed": true,
+  "source_sha256": {
+    "main.py": "c6b942df1d6c0060fc784b9d10f5a1ef29e8cee7c598e91484da6238dffb2d65",
+    "weekly_retrieval.py": "1302a9b4afd526be9ab8e630e7d684d14f5283e299ca16e6fc4600333b2578dc",
+    "service_area.py": "3f504bf9230dfa7a3b7b9727d6d44d559ac0c185c5b2f5ebf623d31aa814deca",
+    "meal_planning.py": "e0f5b9f2fbcb7b93090e4b602e1ac118b013746925109538fa4daa44b79afede",
+    "plan_jobs.py": "c631614fa9796bd397ceeed6d3890aeb800dfbc8ad8722e5588e34c388925344",
+    "workers.py": "f9926130e2423c1400651d28471e8e9dd1a2d914b638c843ef26516f08e3b88f",
+    "benchmarks/scale.py": "8fe667ac6aa52f8b8854d2c71e2910d312a78fa1cfea3f3f0104edbb8c8d4c5b",
+    "benchmarks/http_load.py": "fc5245ed5c5149bb23254ad40cabd97d9744b43478a31be2ac55767f357bdfd6"
+  }
+}

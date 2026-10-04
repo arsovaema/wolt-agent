@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Wolt Cart Helper for Meal Planner",
+  "version": "0.1.8",
+  "description": "Prepare planned meals in your Wolt cart. Review and pay yourself.",
+  "permissions": ["storage"],
+  "background": {"service_worker": "background.js"},
+  "content_scripts": [
+    {"matches": ["http://127.0.0.1/*", "http://localhost/*"], "js": ["bridge.js"], "run_at": "document_idle"},
+    {"matches": ["https://wolt.com/*"], "js": ["rules.js", "wolt.js"], "run_at": "document_idle"}
+  ]
+}

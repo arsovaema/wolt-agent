@@ -1,0 +1,69 @@
+{
+  "schema": "benchmark_0da52e73f80f40c38c2f21b32bad3b7f",
+  "rows": 10000,
+  "concurrency": 4,
+  "requests": 12,
+  "fixture": "Bootstrapped observed menu nutrition/prices and stored real embeddings; synthetic cities, service areas, freshness and availability",
+  "limitations": [
+    "No live provider latency or spend",
+    "No HTTP/TLS/network or login load included",
+    "Not millions of distinct real menus; no human relevance labels",
+    "Unused global HNSW index omitted; this measures exact local retrieval, not ingestion throughput"
+  ],
+  "environment": {
+    "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+    "python": "3.13.9",
+    "postgres": "PostgreSQL 16.15 (Debian 16.15-1.pgdg12+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit"
+  },
+  "errors": [],
+  "observed_seed_meals": 295,
+  "fixture_size_bytes": "44007424",
+  "load_seconds": 0.4,
+  "workload_seconds": 0.14,
+  "retrieval_latency": {
+    "p50_ms": 13.51,
+    "p95_ms": 94.32,
+    "p99_ms": 94.32
+  },
+  "planner_latency": {
+    "p50_ms": 0.36,
+    "p95_ms": 0.91,
+    "p99_ms": 0.91
+  },
+  "successful_requests": 12,
+  "candidate_max": 10,
+  "semantic_recall_at_12": 1.0,
+  "nutrition_recall_at_20": 1.0,
+  "quality_samples": 6,
+  "plan_coverage": 0.3333333333333333,
+  "budget_compliance": 1.0,
+  "nutrition_fit_rate": 0.0,
+  "http_load": {
+    "concurrent_authenticated_users": 4,
+    "plan_workers": 2,
+    "submitted_requests": 4,
+    "poll_requests": 24,
+    "completed_users": 4,
+    "errors": [],
+    "submit_latency": {
+      "p50_ms": 8.06,
+      "p95_ms": 8.62,
+      "p99_ms": 8.62
+    },
+    "poll_latency": {
+      "p50_ms": 11.07,
+      "p95_ms": 26.21,
+      "p99_ms": 26.79
+    },
+    "queue_to_completion_latency": {
+      "p50_ms": 1356.36,
+      "p95_ms": 1363.47,
+      "p99_ms": 1363.47
+    },
+    "planned_days": 21,
+    "budget_compliance": 1.0,
+    "nutrition_fit_rate": 0.0,
+    "transport": "ASGI in-process; excludes TCP/TLS and external providers"
+  },
+  "passed": true
+}

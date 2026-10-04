@@ -1,0 +1,138 @@
+{
+  "$defs": {
+    "DeliveryArea": {
+      "properties": {
+        "latitude": {
+          "maximum": 90,
+          "minimum": -90,
+          "title": "Latitude",
+          "type": "number"
+        },
+        "longitude": {
+          "maximum": 180,
+          "minimum": -180,
+          "title": "Longitude",
+          "type": "number"
+        },
+        "radius_km": {
+          "exclusiveMinimum": 0,
+          "maximum": 100,
+          "title": "Radius Km",
+          "type": "number"
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude",
+        "radius_km"
+      ],
+      "title": "DeliveryArea",
+      "type": "object"
+    },
+    "OpeningWindow": {
+      "properties": {
+        "weekday": {
+          "description": "Monday=0",
+          "maximum": 6,
+          "minimum": 0,
+          "title": "Weekday",
+          "type": "integer"
+        },
+        "start_minute": {
+          "exclusiveMaximum": 1440,
+          "minimum": 0,
+          "title": "Start Minute",
+          "type": "integer"
+        },
+        "end_minute": {
+          "exclusiveMinimum": 0,
+          "maximum": 1440,
+          "title": "End Minute",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "weekday",
+        "start_minute",
+        "end_minute"
+      ],
+      "title": "OpeningWindow",
+      "type": "object"
+    },
+    "RestaurantService": {
+      "properties": {
+        "restaurant_id": {
+          "exclusiveMinimum": 0,
+          "title": "Restaurant Id",
+          "type": "integer"
+        },
+        "latitude": {
+          "maximum": 90,
+          "minimum": -90,
+          "title": "Latitude",
+          "type": "number"
+        },
+        "longitude": {
+          "maximum": 180,
+          "minimum": -180,
+          "title": "Longitude",
+          "type": "number"
+        },
+        "timezone": {
+          "default": "Europe/Skopje",
+          "title": "Timezone",
+          "type": "string"
+        },
+        "available": {
+          "default": true,
+          "title": "Available",
+          "type": "boolean"
+        },
+        "source": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Source",
+          "type": "string"
+        },
+        "verified_until": {
+          "format": "date-time",
+          "title": "Verified Until",
+          "type": "string"
+        },
+        "delivery_areas": {
+          "items": {
+            "$ref": "#/$defs/DeliveryArea"
+          },
+          "maxItems": 100,
+          "minItems": 1,
+          "title": "Delivery Areas",
+          "type": "array"
+        },
+        "opening_hours": {
+          "items": {
+            "$ref": "#/$defs/OpeningWindow"
+          },
+          "maxItems": 100,
+          "minItems": 1,
+          "title": "Opening Hours",
+          "type": "array"
+        }
+      },
+      "required": [
+        "restaurant_id",
+        "latitude",
+        "longitude",
+        "source",
+        "verified_until",
+        "delivery_areas",
+        "opening_hours"
+      ],
+      "title": "RestaurantService",
+      "type": "object"
+    }
+  },
+  "items": {
+    "$ref": "#/$defs/RestaurantService"
+  },
+  "type": "array"
+}

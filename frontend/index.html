@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wolt Meal Planner</title>
+  <link rel="stylesheet" href="/static/styles.css?v=20260920-order2">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">WOLT · PERSONAL NUTRITION</p>
+      <h1>Plan a week you’ll actually want to eat.</h1>
+      <p class="lede">Set your goal and budget once. We’ll build seven days of restaurant meals around your nutrition targets, then help you start fresh next week.</p>
+    </section>
+
+    <section class="panel hidden" id="auth-panel">
+      <h2>Sign in to your meal planner</h2>
+      <form id="auth-form"><div class="field-grid">
+        <label>Username<input name="username" autocomplete="username" minlength="3" maxlength="80" required></label>
+        <label>Password<input name="password" type="password" autocomplete="current-password" minlength="12" maxlength="128" required></label>
+      </div><div class="actions"><button class="button primary" type="submit">Sign in</button>
+      <button class="button secondary" type="button" id="register-button">Create account</button><span id="auth-status" role="status"></span></div></form>
+    </section>
+    <div class="actions"><button class="button secondary hidden" id="logout-button">Sign out</button></div>
+    <section class="panel profile-panel">
+      <div class="panel-heading">
+        <div><p class="eyebrow">01 / YOUR PROFILE</p><h2>Tell us what you’re working toward</h2></div>
+        <span class="step">Required for your plan</span>
+      </div>
+      <form id="profile-form">
+        <div class="field-grid">
+          <label>Current weight <span>kg</span><input name="current_weight_kg" type="number" min="1" step="0.1" required></label>
+          <label>Target weight <span>kg</span><input name="target_weight_kg" type="number" min="1" step="0.1" required></label>
+          <label>Height <span>cm</span><input name="height_cm" type="number" min="1" step="0.1" required></label>
+          <label>Age <span>years</span><input name="age" type="number" min="13" max="120" required></label>
+          <label>Sex<select name="sex" required><option value="female">Female</option><option value="male">Male</option></select></label>
+          <label>Activity level<select name="activity_level"><option>sedentary</option><option>lightly active</option><option selected>moderately active</option><option>very active</option><option>extra active</option></select></label>
+          <label>City<input name="city" value="Skopje" maxlength="100" readonly required></label>
+          <label>Daily delivery time <span>Skopje time</span><input name="delivery_time" type="time" value="13:00" required><small>Plan three dishes from one restaurant per day, with restaurants rotating through the week. Plans use the Skopje catalog. Confirm delivery to your address and opening hours on Wolt.</small></label>
+          <label>Goal<select name="goal" required><option value="fat loss">Fat loss</option><option value="muscle gain">Muscle gain</option><option value="maintenance">Maintenance</option></select></label>
+          <label>Total daily budget <span>MKD</span><input name="daily_budget_mkd" type="number" min="1" step="1" required></label>
+          <label class="wide">Daily fee allowance <span>MKD</span><input name="daily_fee_allowance_mkd" type="number" min="0" step="1" required><small>Included in your daily budget. Reserve for all delivery, service fees and extras that day.</small></label>
+        </div>
+        <div class="actions"><button class="button primary" type="submit" id="save-button">Save goal & build my week</button><span class="form-status" id="profile-status"></span></div>
+      </form>
+    </section>
+
+    <section class="panel plan-panel" id="plan-section">
+      <div class="panel-heading">
+        <div><p class="eyebrow">02 / YOUR WEEK</p><h2>Seven days, generated around you</h2></div>
+        <button class="button secondary" id="generate-button" disabled>Generate 7-day plan</button>
+      </div>
+      <div id="plan-status" class="empty-state" role="status" aria-live="polite"><div class="empty-icon">✦</div><p>Save your profile to unlock your first week.</p></div>
+      <div id="week-summary" class="week-summary hidden"></div>
+      <div id="week-grid" class="week-grid"></div>
+    </section>
+
+    <footer><span>Nutrition values are estimates.</span><span>Ranges reflect portion uncertainty.</span><span>Check final Wolt checkout totals.</span></footer>
+  </main>
+  <dialog id="order-dialog" aria-labelledby="order-title" aria-describedby="order-explanation">
+    <div class="order-heading"><p class="eyebrow">YOUR DAY · ON WOLT</p><button type="button" id="order-close" class="order-close" aria-label="Close order dialog">×</button></div>
+    <h2 id="order-title">Do you want to order?</h2>
+    <p id="order-explanation">We’ll prepare your meals in Wolt. You review the delivery address, time, fees and payment there.</p>
+    <div id="order-meals"></div>
+    <p id="order-status" role="status" aria-live="polite"></p>
+    <div id="order-setup" class="hidden"><strong>Connect Wolt Cart Helper once</strong><p>Install the helper in Chrome or Edge, then reload this page. It uses your existing Wolt login and never clicks Pay.</p><a href="/static/wolt-cart-helper.zip" download>Download extension</a> · <a href="/static/order-setup.html" target="_blank" rel="noopener">Installation steps</a></div>
+    <div class="actions"><button type="button" class="button secondary" id="order-cancel">Not now</button><button type="button" class="button primary" id="order-confirm" disabled>Yes, prepare in Wolt</button></div>
+    <p class="order-footnote">Each new day uses a separate cart; finish your current cart before starting another day. Opening Wolt starts preparation now. A future day in the plan does not schedule a future delivery.</p>
+  </dialog>
+  <script src="/static/app.js?v=20260920-order2" defer></script>
+</body>
+</html>

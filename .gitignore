@@ -1,0 +1,21 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python environment and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local editor and OS files
+.vscode/
+.DS_Store
+
+# Downloaded ML models
+experiments/food_model/models/
+*.safetensors
+
+# Logs
+*.log
